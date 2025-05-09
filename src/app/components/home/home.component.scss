@@ -1,0 +1,98 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+
+  .content {
+    max-width: 600px;
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.125rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+    .highlight {
+      color: var(--nav-accent);
+    }
+    .buttons {
+      display: flex;
+      gap: 1rem;
+
+      .btn {
+        padding: 0.75rem 1.5rem;
+        background-color: var(--nav-accent);
+        border: none;
+        border-radius: 0.5rem;
+        color: #000;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #eab308;
+        }
+
+        &.secondary {
+          background-color: transparent;
+          border: 2px solid var(--nav-accent);
+          color: var(--nav-accent);
+
+          &:hover {
+            background-coloR: Yellow;
+            
+          }
+        }
+      }
+    }
+  }
+
+  .illustration {
+    flex: 1 1 300px;
+    max-width: 500px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .content {
+      text-align: center;
+    }
+  }
+}
+
+// 11. Global styles.scss (unchanged)
+body.dark-theme {
+  background-color: #121212;
+  color: #fff;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --nav-bg: #ffffff;
+  --nav-text: #1f2937;
+  --nav-accent: #facc15;
+}
+
+body.dark-theme {
+  --nav-bg: #1f2937;
+  --nav-text: #f3f4f6;
+  --nav-accent: #facc15;
+}

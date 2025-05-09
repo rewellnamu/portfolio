@@ -1,0 +1,49 @@
+<section class="resume-section">
+  <h2 class="section-title">My Resume</h2>
+
+  <div class="resume-grid">
+    <!-- Education -->
+    <div class="resume-block">
+      <h3 class="resume-heading">Education</h3>
+      <div class="resume-item" *ngFor="let edu of education">
+        <h4>{{ edu.degree }}</h4>
+        <p>{{ edu.institution }}</p>
+        <span class="date">{{ edu.year }}</span>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="resume-block">
+      <h3 class="resume-heading">Experience</h3>
+      <div class="resume-item" *ngFor="let exp of experience">
+        <h4>{{ exp.role }}</h4>
+        <p>{{ exp.company }}</p>
+        <span class="date">{{ exp.year }}</span>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="resume-block">
+      <h3 class="resume-heading">Certifications</h3>
+      <div class="resume-item" *ngFor="let cert of certifications">
+        <h4>{{ cert.title }}</h4>
+        <p>{{ cert.issuer }}</p>
+        <span class="date">{{ cert.year }}</span>
+      </div>
+    </div>
+
+    <!-- Awards -->
+    <div class="resume-block">
+      <h3 class="resume-heading">Awards</h3>
+      <div class="resume-item" *ngFor="let award of awards">
+        <h4>{{ award.title }}</h4>
+        <p>{{ award.organization }}</p>
+        <span class="date">{{ award.year }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="download-section">
+    <a href="cyber security.pdf" download class="btn">Download Full Resume</a>
+  </div>
+</section>
