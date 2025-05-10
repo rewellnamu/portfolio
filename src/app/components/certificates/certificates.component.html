@@ -1,0 +1,14 @@
+<section class="certificates-section">
+  <h2 class="section-title">Certificates</h2>
+
+  <div class="certificates-grid">
+    <div class="certificate-card" *ngFor="let cert of certificates">
+      <h3>{{ cert.title }}</h3>
+      <p>{{ cert.issuer }}</p>
+      <span class="year">{{ cert.year }}</span>
+      <a [href]="cert.link" target="_blank" class="view-link">View Certificate</a>
+      <a [href]="cert.pdf" download class="download-link">Download PDF</a>
+      
+    </div>
+  </div>
+</section>

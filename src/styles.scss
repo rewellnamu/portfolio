@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.scss */
+
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --nav-accent: #facc15;
+  --nav-text: #333;
+}
+
+.dark-theme {
+  --bg: #1a1a1a;
+  --text: #f0f0f0;
+  --nav-accent: #facc15;
+  --nav-text: #f0f0f0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}

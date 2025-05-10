@@ -1,0 +1,15 @@
+button {
+  background: transparent;
+  border: 2px solid var(--nav-accent);
+  color: var(--nav-text);
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: var(--nav-accent);
+    color: #000;
+  }
+}

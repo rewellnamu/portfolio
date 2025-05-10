@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
 
 
 @Component({
-  imports: [ RouterModule],
+  imports: [ RouterModule, ThemeToggleComponent],
   selector: 'app-navbar',
   standalone: true,
   templateUrl: './navbar.component.html',
