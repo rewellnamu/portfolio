@@ -54,24 +54,23 @@
           font-weight: bold;
           text-decoration: none;
           transition: background 0.3s, color 0.3s;
-          cursor: pointer;
+          background-color: white;
 
           &.primary {
-            background-color: var(--accent);
-            color: #fff;
+            
+            color: #080101;
 
             &:hover {
-              background-color: dark(var(--accent), 10%);
+              background-color: yellow;
             }
           }
 
           &.secondary {
             border: 2px solid var(--accent);
-            color: var(--accent);
+            color: black;
 
             &:hover {
-              background-color: var(--accent);
-              color: #fff;
+               background-color: yellow;
             }
           }
         }
