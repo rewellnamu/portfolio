@@ -1,28 +1,31 @@
-name: Build and Deploy Angular App
+name: CI/CD
 
 on:
   push:
-    branches:
-      - main  # or "master" depending on your default branch
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  build-and-deploy:
+  build-and-test:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout source
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Setup Node
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Build Angular App
-      run: npm run build -- --configuration production
+      - name: Run lint
+        run: npm run lint
 
-    - name: Deploy to GitHub Pages
-      run: npx angular-cli-ghpages --dir=dist/your-app-name
+      - name: Run tests
+        run: npm test
+
+      - name: Build project
+        run: npm run build
