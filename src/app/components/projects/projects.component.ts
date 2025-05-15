@@ -12,20 +12,12 @@ import { RouterModule } from '@angular/router';
 export class ProjectsComponent {
   projects = [
     {
-      title: 'SkillMatch AI',
-      description: 'AI-powered job matching platform for skills-based hiring.',
-      tech: ['Angular', 'Express.js', 'PostgreSQL', 'OpenAI'],
-      github: 'https://github.com/yourusername/skillmatch-ai',
-      demo: 'https://skillmatch-ai.vercel.app',
-      image: 'assets/images/skillmatch.png'
-    },
-    {
       title: 'Kenya National Geo',
       description: 'Explore parks and wildlife in Kenya with this interactive app.',
       tech: ['Angular', 'Node.js', 'MongoDB'],
       github: 'https://github.com/yourusername/kenya-national-geo',
       demo: '',
-      image: 'assets/images/kenya-geo.png'
+      image: 'Screenshot (256).png'
     },
     {
       title: 'Portfolio Website',
@@ -33,7 +25,7 @@ export class ProjectsComponent {
       tech: ['Angular', 'Tailwind CSS'],
       github: '',
       demo: 'https://yourportfolio.com',
-      image: 'assets/images/portfolio.png'
+      image: 'Screenshot (289).png'
     },
     {
       title: 'E-commerce App',
@@ -41,7 +33,7 @@ export class ProjectsComponent {
       tech: ['Angular', 'Node.js', 'MongoDB'],
       github: '',
       demo: 'https://ecommerce-app.com',
-      image: 'assets/images/ecommerce.png'
+      image: 'Screenshot (293).png'
     },
     {
       title: 'Blog Platform',
@@ -49,7 +41,7 @@ export class ProjectsComponent {
       tech: ['Angular', 'Node.js', 'MongoDB'],
       github: '',
       demo: 'https://blog-platform.com',
-      image: 'assets/images/blog-platform.png'
+      image: 'Screenshot (11).png'
     },
     {
       title: 'Weather App',
@@ -57,7 +49,7 @@ export class ProjectsComponent {
       tech: ['Angular', 'OpenWeatherMap API'],
       github: '',
       demo: 'https://weather-app.com',
-      image: 'assets/images/weather-app.png'
+      image: 'Screenshot (9).png'
     },
     {
       title: 'Task Manager',
@@ -65,7 +57,7 @@ export class ProjectsComponent {
       tech: ['Angular', 'Node.js', 'MongoDB'],
       github: '',
       demo: 'https://task-manager.com',
-      image: 'assets/images/task-manager.png'
+      image: 'Screenshot (13).png'
     },
     {
       title: 'Chat Application',

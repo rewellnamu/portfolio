@@ -13,15 +13,19 @@ export class ThemeToggleComponent {
 
   toggleTheme(): void {
     this.isDarkMode = !this.isDarkMode;
-    document.body.classList.toggle('dark-theme', this.isDarkMode);
-    localStorage.setItem('theme', this.isDarkMode ? 'dark' : 'light');
+    if (typeof window !== 'undefined' && window.localStorage) {
+      document.body.classList.toggle('dark-theme', this.isDarkMode);
+      localStorage.setItem('theme', this.isDarkMode ? 'dark' : 'light');
+    }
   }
 
   ngOnInit(): void {
-    const savedTheme = localStorage.getItem('theme');
-    this.isDarkMode = savedTheme === 'dark';
-    if (this.isDarkMode) {
-      document.body.classList.add('dark-theme');
+    if (typeof window !== 'undefined' && window.localStorage) {
+      const savedTheme = localStorage.getItem('theme');
+      this.isDarkMode = savedTheme === 'dark';
+      if (this.isDarkMode) {
+        document.body.classList.add('dark-theme');
+      }
     }
   }
 }
