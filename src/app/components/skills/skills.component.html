@@ -2,7 +2,13 @@
   <h2 class="section-title">Skills & Technologies</h2>
   <div class="skills-grid">
     <div class="skill-card" *ngFor="let skill of skills">
-      <div class="skill-icon">{{ skill.icon }}</div>
+      <div class="skill-icon">
+        <img
+          *ngIf="skill.icon"
+          [src]="skill.icon"
+          [alt]="skill.title + ' icon'"
+        />
+      </div>
       <h3>{{ skill.title }}</h3>
       <ul>
         <li *ngFor="let item of skill.items">{{ item }}</li>

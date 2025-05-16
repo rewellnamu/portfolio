@@ -14,66 +14,42 @@ export class ProjectsComponent {
     {
       title: 'Kenya National Geo',
       description: 'Explore parks and wildlife in Kenya with this interactive app.',
-      tech: ['Angular', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/yourusername/kenya-national-geo',
+      tech: ['Angular', 'Node.js', 'postgrSQL', 'TypeScript','Express.js'],
+      github: 'https://github.com/rewellnamu/kenya-national-geo',
       demo: '',
       image: 'Screenshot (256).png'
     },
     {
       title: 'Portfolio Website',
       description: 'My personal portfolio showcasing my projects and skills.',
-      tech: ['Angular', 'Tailwind CSS'],
-      github: '',
-      demo: 'https://yourportfolio.com',
+      tech: ['Angular', 'Tailwind CSS','Typscript'],
+      github: 'https://github.com/rewellnamu/portfolio',
+      demo: '',
       image: 'Screenshot (289).png'
     },
     {
-      title: 'E-commerce App',
-      description: 'Full-featured e-commerce application with payment integration.',
-      tech: ['Angular', 'Node.js', 'MongoDB'],
-      github: '',
-      demo: 'https://ecommerce-app.com',
+      title: 'Joy Millers clone',
+      description: 'A clone of the Joy Millers website with a focus on responsive design.',
+      tech: ['Angular', 'Node.js', 'Typescript'],
+      github: 'https://github.com/rewellnamu/JOY-MILLERS-LTD',
+      demo: '',
       image: 'Screenshot (293).png'
     },
     {
-      title: 'Blog Platform',
-      description: 'A blogging platform with user authentication and post management.',
-      tech: ['Angular', 'Node.js', 'MongoDB'],
-      github: '',
-      demo: 'https://blog-platform.com',
+      title: 'Recipe Platform',
+      description: 'A platform for menu recipes.',
+      tech: ['HTML/CSS'],
+      github: 'https://github.com/rewellnamu/webpage-hotel-',
+      demo: '',
       image: 'Screenshot (11).png'
     },
     {
-      title: 'Weather App',
-      description: 'Real-time weather application using OpenWeatherMap API.',
-      tech: ['Angular', 'OpenWeatherMap API'],
+      title: 'Google Card',
+      description: 'A clone of Google Card with a focus on responsive design.',
+      tech: ['HTML/CSS'],
       github: '',
-      demo: 'https://weather-app.com',
+      demo: '',
       image: 'Screenshot (9).png'
-    },
-    {
-      title: 'Task Manager',
-      description: 'A simple task management application with user authentication.',
-      tech: ['Angular', 'Node.js', 'MongoDB'],
-      github: '',
-      demo: 'https://task-manager.com',
-      image: 'Screenshot (13).png'
-    },
-    {
-      title: 'Chat Application',
-      description: 'Real-time chat application using WebSocket.',
-      tech: ['Angular', 'Node.js', 'Socket.io'],
-      github: '',
-      demo: 'https://chat-app.com',
-      image: 'assets/images/chat-app.png'
-    },
-    {
-      title: 'Recipe Finder',
-      description: 'Find recipes based on ingredients using a public API.',
-      tech: ['Angular', 'Recipe API'],
-      github: '',
-      demo: 'https://recipe-finder.com',
-      image: 'assets/images/recipe-finder.png'
     }
     // Add more projects here
   ];

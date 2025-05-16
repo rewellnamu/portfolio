@@ -43,18 +43,18 @@
     </div>
 
     <!-- Transcripts -->
-     
-  <div class="transcript-section">
-    <h3 class="resume-heading">Transcripts</h3>
-    <ul>
-      <li *ngFor="let t of transcript">
-        <a [href]="t.downloadLink" target="_blank" rel="noopener">{{ t.course }} Transcript</a>
-      </li>
-    </ul>
-  </div>
+
+    <div class="transcript-section">
+      <h3 class="resume-heading">Transcripts</h3>
+      <ul>
+        <li *ngFor="let t of transcript">
+          <a [href]="t.downloadLink" download>{{ t.course }} Transcript</a>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <div class="download-section">
-    <a href="cyber security.pdf" download class="btn">Download Full Resume</a>
+    <a href="" download class="btn">Download Full Resume</a>
   </div>
 </section>

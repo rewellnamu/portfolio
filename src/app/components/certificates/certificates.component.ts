@@ -12,61 +12,116 @@ import { CommonModule } from '@angular/common';
 export class CertificatesComponent {
 certificates = [
   {
-    title: 'Angular Developer Certification',
-    issuer: 'Coursera',
-    year: '2023',
-    link: 'https://www.coursera.org/certificate/example',
-    pdf: 'assets/certificates/angular-coursera.pdf'
+    title: 'SOFTWARE DEVELOPMENT',
+    issuer: 'TEACH2GIVE',
+    year: '2025',
+    link: '/cert/Software Development.pdf',
+    pdf: 'cert/Software Development.pdf'
   },
   {
-    title: 'Full Stack Web Development',
-    issuer: 'freeCodeCamp',
-    year: '2022',
-    link: 'https://www.freecodecamp.org/certificate/example',
-    pdf: 'assets/certificates/fullstack-freecodecamp.pdf'
+    title: 'INTRODUCTION TO DATA SCIENCE',
+    issuer: 'CISCO',
+    year: '2024',
+    link: '/cert/Introduction_to_Data_Science.pdf',
+    pdf: '/cert/Introduction_to_Data_Science.pdf'
   },
   {
-    title: 'Responsive Web Design',
-    issuer: 'freeCodeCamp',
-    year: '2021',
-    link: 'https://www.freecodecamp.org/certificate/example',
-    pdf: 'assets/certificates/responsive-web-design.pdf'
+    title: 'CUSTOMER EXPERIENCE(CX)',
+    issuer: 'HP LIFE',
+    year: '2024',
+    link: '/cert/customer experience(cx).pdf',
+    pdf: '/cert/customer experience(cx).pdf'
   },
   {
-    title: 'JavaScript Algorithms and Data Structures',
-    issuer: 'freeCodeCamp',
-    year: '2021',
-    link: 'https://www.freecodecamp.org/certificate/example',
-    pdf: 'assets/certificates/javascript-algorithms.pdf'
+    title: 'DATA SCIENCE AND ANALYTICS',
+    issuer: 'HP LIFE',
+    year: '2024',
+    link: '/cert/data science and analytics.pdf',
+    pdf: '/cert/data science and analytics.pdf'
   },
   {
-    title: 'React Developer Certification',
-    issuer: 'Coursera',
-    year: '2023',
-    link: 'https://www.coursera.org/certificate/example',
-    pdf: 'assets/certificates/react-coursera.pdf'
+    title: 'COMPUTER HARDWARE BASICS',
+    issuer: 'CISCO',
+    year: '2024',
+    link: '/cert/Computer_Hardware_Basics_.pdf',
+    pdf: '/cert/Computer_Hardware_Basics_.pdf'
   },
   {
-    title: 'Node.js Certification',
-    issuer: 'Coursera',
-    year: '2023',
-    link: 'https://www.coursera.org/certificate/example',
-    pdf: 'assets/certificates/nodejs-coursera.pdf'
+    title: 'INTRODUCTION TO CYBER SECURITY',
+    issuer: 'CISCO',
+    year: '2024',
+    link: '/cert/Introduction_to_Cybersecurity.pdf',
+    pdf: '/cert/Introduction_to_Cybersecurity.pdf'
   },
   {
-    title: 'Python for Everybody',
-    issuer: 'Coursera',
-    year: '2022',
-    link: 'https://www.coursera.org/certificate/example',
-    pdf: 'assets/certificates/python-coursera.pdf'
+    title: 'INTRODUCTION TO CYBER SECURITY AWARENESS',
+    issuer: 'HP LIFE',
+    year: '2024',
+    link: '/cert/introduction to cybersecurity awareness.pdf',
+    pdf: '/cert/introduction to cybersecurity awareness.pdf'
   },
   {
-    title: 'Data Science with Python',
-    issuer: 'Coursera',
-    year: '2022',
-    link: 'https://www.coursera.org/certificate/example',
-    pdf: 'assets/certificates/data-science-python.pdf'
+    title: 'INTRODUCTION TO DIGITAL BUSINESS SKILLS',
+    issuer: 'HP LIFE',
+    year: '2024',
+    link: '/cert/introduction to digital business skills.pdf',
+    pdf: '/cert/introduction to digital business skills.pdf'
+  },
+  {
+    title: 'CUSTOMER RELATIONSHIP MANAGEMENT',
+    issuer: 'HP LIFE',
+    year: '2024',
+    link: '/cert/customer relationship management.pdf',
+    pdf: '/cert/customer relationship management.pdf'
+  },
+  {
+    title: 'IT FOR BUSINESS SUCCESS',
+    issuer: 'HP LIFE',
+    year: '2024',
+    link: '/cert/IT for business success.pdf',
+    pdf: '/cert/IT for business success.pdf'
+  },
+  {
+    title: 'SOCIAL MEDIA MARKETING',
+    issuer: 'HP LIFE',
+    year: '2024',
+    link: '/cert/social media marketing.pdf',
+    pdf: '/cert/social media marketing.pdf'
+  },
+  {
+    title: 'SALES FORECASTING',
+    issuer: 'HP LIFE',
+    year: '2024',
+    link: '/cert/Sales Forecasting .pdf',
+    pdf: '/cert/Sales Forecasting .pdf'
+  },
+  {
+    title: 'PROFIT AND LOSS',
+    issuer: 'HP LIFE',
+    year: '2024',
+    link: '/cert/PROFIT AND LOSS.pdf',
+    pdf: '/cert/PROFIT AND LOSS.pdf'
+  },
+  {
+    title: 'INVENTORY MANAGEMENT',
+    issuer: 'HP LIFE',
+    year: '2024',
+    link: '/cert/inventory management.pdf',
+    pdf: '/cert/inventory management.pdf'
+  },
+  {
+    title: 'EFFECTIVE PRESENTATION',
+    issuer: 'HP LIFE',
+    year: '2024',
+    link: '/cert/EFFECTIVE PRESENTATION CERTIFICATE.pdf',
+    pdf: '/cert/EFFECTIVE PRESENTATION CERTIFICATE.pdf'
+  },
+  {
+    title: 'COMPUTER APPLICATIONS',
+    issuer: 'EMBU COLLEGE',
+    year: '2013',
+    link: '/cert/EMBU CERT.pdf',
+    pdf: '/cert/EMBU CERT.pdf'
   }
-  
 ];
 }

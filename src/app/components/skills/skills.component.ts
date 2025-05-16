@@ -7,29 +7,43 @@ import { RouterModule } from '@angular/router';
   selector: 'app-skills',
   standalone: true,
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
   skills = [
     {
       title: 'Frontend',
-      icon: '🎨',
-      items: ['Angular', 'HTML5', 'CSS3 / SCSS', 'JavaScript', 'TypeScript', 'Responsive Design']
+      icon: '/icons/image.png',
+      items: [
+        'Angular',
+        'HTML5',
+        'CSS3 / SCSS',
+        'JavaScript',
+        'TypeScript',
+        'Responsive Design',
+      ],
     },
     {
       title: 'Backend',
-      icon: '🛠️',
-      items: ['Node.js', 'Express.js', 'PostgreSQL', 'MongoDB', 'REST APIs']
+      icon: '/icons/browser.png',
+      items: [
+        'Node.js',
+        'Next.js',
+        'Express.js',
+        'PostgreSQL',
+        'MongoDB',
+        'REST APIs',
+      ],
     },
     {
       title: 'Tools & DevOps',
-      icon: '⚙️',
-      items: ['Git & GitHub', 'Docker', 'Figma', 'Vercel', 'Netlify']
+      icon: '/icons/technical-support.png',
+      items: ['Git & GitHub', 'Docker', 'Figma', 'Vercel', 'postman'],
     },
     {
       title: 'AI/Other',
-      icon: '🤖',
-      items: ['OpenAI API', 'ChatGPT Integration', 'AI Skills Matching']
-    }
+      icon: '/icons/ai.png',
+      items: ['OpenAI API', 'ChatGPT Integration', 'AI Skills Matching'],
+    },
   ];
 }
