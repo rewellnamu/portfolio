@@ -38,7 +38,7 @@ export class SkillsComponent {
     {
       title: 'Tools & DevOps',
       icon: '/icons/technical-support.png',
-      items: ['Git & GitHub', 'Docker', 'Figma', 'Vercel', 'postman'],
+      items: ['Git & GitHub', 'Docker', 'Figma', 'Vercel', 'postman','AWS'],
     },
     {
       title: 'AI/Other',

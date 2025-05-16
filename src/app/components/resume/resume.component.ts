@@ -47,26 +47,25 @@ export class ResumeComponent {
     },
   ];
 
-  certifications = [
-    { title: 'Software Developer', issuer: 'TEACH2GIVE', year: '2025' },
-    { title: '', issuer: 'freeCodeCamp', year: '2022' },
-    {
-      title: 'JavaScript Algorithms and Data Structures',
-      issuer: 'freeCodeCamp',
-      year: '2021',
-    },
-    { title: 'Responsive Web Design', issuer: 'freeCodeCamp', year: '2020' },
-    { title: 'Python for Everybody', issuer: 'Coursera', year: '2019' },
-  ];
-
   badges = [
     {
       title: 'Introduction to Cyber Security',
       organization: 'CISCO',
       year: '2024',
+      image: '/badges/introduction-to-cybersecurity.png',
     },
-    { title: 'HP LIFE Ambassador', organization: 'HP LIFE', year: '2024' },
-    { title: 'Computer Hardware Basics', organization: 'CISCO', year: '2024' },
+    {
+      title: 'HP LIFE Ambassador',
+      organization: 'HP LIFE',
+      year: '2024',
+      image: '/badges/hp-life.png',
+    },
+    {
+      title: 'Computer Hardware Basics',
+      organization: 'CISCO',
+      year: '2024',
+      image: '/badges/computer-hardware-basics.png',
+    },
   ];
   transcript = [
     {

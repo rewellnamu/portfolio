@@ -1,70 +1,113 @@
 .resume-section {
   padding: 4rem 2rem;
-  background-color: var(--bg);
+  background: linear-gradient(120deg, #f8fafc 80%, #e3f0ff 100%);
   color: var(--nav-text);
 
   .section-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
     text-align: center;
     color: var(--nav-accent);
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px #00c6ff11;
   }
 
   .resume-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
   .resume-block {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(120deg, #fff 80%, #e3f0ff 100%);
+    padding: 2.2rem 2rem 2rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 6px 24px 0 #00c6ff13, 0 1.5px 6px #00c6ff11;
+    transition: box-shadow 0.25s, transform 0.18s;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      box-shadow: 0 12px 32px 0 #00c6ff22, 0 3px 12px #00c6ff22;
+      transform: translateY(-4px) scale(1.015);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle, #facc15 0%, transparent 70%);
+      opacity: 0.13;
+      z-index: 0;
+    }
 
     .resume-heading {
-      font-size: 1.25rem;
+      font-size: 1.35rem;
       color: var(--nav-accent);
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-shadow: 0 1px 4px #00c6ff11;
+      position: relative;
+      z-index: 1;
     }
 
     .resume-item {
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
+      position: relative;
+      z-index: 1;
 
       h4 {
         margin: 0;
-        font-size: 1.1rem;
-        color: #333;
+        font-size: 1.13rem;
+        color: #222;
+        font-weight: 600;
+        letter-spacing: 0.01em;
       }
 
       p {
         margin: 0.25rem 0;
         color: #555;
+        font-size: 1rem;
+        line-height: 1.5;
       }
 
       .date {
-        font-size: 0.9rem;
+        font-size: 0.93rem;
         color: #888;
+        font-style: italic;
       }
     }
   }
 
   .download-section {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     text-align: center;
 
     .btn {
       display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: var(--nav-accent);
+      padding: 0.85rem 2rem;
+      background: linear-gradient(90deg, var(--nav-accent) 60%, #00c6ff 100%);
       color: #000;
-      font-weight: 600;
-      border-radius: 0.5rem;
+      font-weight: 700;
+      border-radius: 0.7rem;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      font-size: 1.08rem;
+      letter-spacing: 0.03em;
+      box-shadow: 0 2px 12px #00c6ff22;
+      transition: background 0.3s, color 0.2s, box-shadow 0.2s, transform 0.15s;
 
       &:hover {
-        background-color: #facc15;
+        background: linear-gradient(90deg, #00c6ff 60%, var(--nav-accent) 100%);
+        color: #fff;
+        box-shadow: 0 6px 24px #00c6ff33;
+        transform: translateY(-2px) scale(1.06);
       }
     }
   }

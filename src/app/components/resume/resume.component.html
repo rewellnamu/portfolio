@@ -22,20 +22,18 @@
       </div>
     </div>
 
-    <!-- Certifications -->
-    <div class="resume-block">
-      <h3 class="resume-heading">Certifications</h3>
-      <div class="resume-item" *ngFor="let cert of certifications">
-        <h4>{{ cert.title }}</h4>
-        <p>{{ cert.issuer }}</p>
-        <span class="date">{{ cert.year }}</span>
-      </div>
-    </div>
-
     <!-- Awards -->
     <div class="resume-block">
       <h3 class="resume-heading">Badges</h3>
       <div class="resume-item" *ngFor="let badge of badges">
+        <img
+          *ngIf="badge.image"
+          [src]="badge.image"
+          [alt]="badge.title + ' badge'"
+          class="badge-img"
+          width="48"
+          height="48"
+        />
         <h4>{{ badge.title }}</h4>
         <p>{{ badge.organization }}</p>
         <span class="date">{{ badge.year }}</span>
