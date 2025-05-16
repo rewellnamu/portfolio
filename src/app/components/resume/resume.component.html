@@ -34,13 +34,24 @@
 
     <!-- Awards -->
     <div class="resume-block">
-      <h3 class="resume-heading">Awards</h3>
-      <div class="resume-item" *ngFor="let award of awards">
-        <h4>{{ award.title }}</h4>
-        <p>{{ award.organization }}</p>
-        <span class="date">{{ award.year }}</span>
+      <h3 class="resume-heading">Badges</h3>
+      <div class="resume-item" *ngFor="let badge of badges">
+        <h4>{{ badge.title }}</h4>
+        <p>{{ badge.organization }}</p>
+        <span class="date">{{ badge.year }}</span>
       </div>
     </div>
+
+    <!-- Transcripts -->
+     
+  <div class="transcript-section">
+    <h3 class="resume-heading">Transcripts</h3>
+    <ul>
+      <li *ngFor="let t of transcript">
+        <a [href]="t.downloadLink" target="_blank" rel="noopener">{{ t.course }} Transcript</a>
+      </li>
+    </ul>
+  </div>
   </div>
 
   <div class="download-section">

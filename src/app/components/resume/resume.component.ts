@@ -24,16 +24,21 @@ export class ResumeComponent {
   ];
 
   certifications = [
-    { title: 'Angular Developer Certification', issuer: 'Coursera', year: '2023' },
+    { title: 'Software Developer', issuer: 'TEACH2GIVE', year: '2025' },
     { title: 'Full Stack Web Development', issuer: 'freeCodeCamp', year: '2022' },
     { title: 'JavaScript Algorithms and Data Structures', issuer: 'freeCodeCamp', year: '2021' },
     { title: 'Responsive Web Design', issuer: 'freeCodeCamp', year: '2020' },
     { title: 'Python for Everybody', issuer: 'Coursera', year: '2019' }
   ];
 
-  awards = [
-    { title: 'Top Innovator Award', organization: 'TechNova Hackathon', year: '2023' },
-    { title: 'Best Capstone Project', organization: 'University of Nairobi', year: '2022' }
+  badges = [
+    { title: 'Introduction to Cyber Security', organization: 'CISCO', year: '2024' },
+    { title: 'HP LIFE Ambassador', organization: 'HP LIFE', year: '2024' },
+    { title: 'Computer Hardware Basics', organization: 'CISCO', year: '2024' }
+  ];
+  transcript = [
+    { course: 'CISCO', downloadLink: 'https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate.html' },
+    { course: 'HP LIFE', downloadLink: 'https://www.hp.com/us-en/hp-life/learn.html' },
   ];
 }
 
