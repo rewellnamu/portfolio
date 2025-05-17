@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-about',
   imports: [ CommonModule, RouterModule ],
   templateUrl: './about.component.html',
