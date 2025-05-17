@@ -12,39 +12,42 @@ import { RouterModule } from '@angular/router';
 export class ResumeComponent {
   education = [
     {
-      degree: 'BSc in Computer Science',
-      institution: 'CISCO NETWORKING',
-      year: '2020 - 2022',
+      institution: 'CISCO NETWORKING (Netacad)',
+      year: '2024',
     },
     {
-      degree: 'Diploma in Web Development',
-      institution: 'University of Nairobi',
-      year: '2018 - 2020',
+      
+      institution: 'HP LIFE',
+      year: '2024',
     },
     {
-      degree: 'High School Certificate',
+      institution: 'EMBU COLLEGE',
+      year: '2013',
+    },
+    {
+      
       institution: 'Nguviu Boys High School',
-      year: '2014 - 2017',
+      year: '2009 - 2012',
     },
   ];
 
   experience = [
     {
-      role: 'Frontend Developer',
-      company: 'TechNova Solutions',
-      year: '2023 - Present',
+      role: 'Software Developer Attachee',
+      company: 'TEACH2GIVE',
+      year: '2025',
     },
     {
-      role: 'Intern Web Developer',
-      company: 'DigitalEdge Agency',
-      year: '2022 - 2023',
+      role: 'Sales Person',
+      company: 'Shell-Kingongo',
+      year: '2021-2024',
     },
-    { role: 'Junior Developer', company: 'WebWorks', year: '2021 - 2022' },
     {
-      role: 'Intern Software Engineer',
-      company: 'Innovatech',
-      year: '2020 - 2021',
+      role: 'Security Personnel',
+      company: 'Asset Security LTD',
+      year: '2019-2021',
     },
+   
   ];
 
   badges = [
