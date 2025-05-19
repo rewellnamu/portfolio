@@ -14,43 +14,76 @@ export class ProjectsComponent {
     {
       title: 'Kenya National Geo',
       description: 'Explore parks and wildlife in Kenya with this interactive app.',
-      tech: ['Angular', 'Node.js', 'postgrSQL', 'TypeScript','Express.js'],
+      tech: ['Angular', 'Node.js', 'PostgreSQL', 'TypeScript','Express.js','Github Workflow'],
       github: 'https://github.com/rewellnamu/kenya-national-geo',
-      demo: '',
+      demo: 'https://kenya-national-geo.vercel.app/',
       image: 'Screenshot (256).png'
     },
     {
       title: 'Portfolio Website',
       description: 'My personal portfolio showcasing my projects and skills.',
-      tech: ['Angular', 'Tailwind CSS','Typscript'],
+      tech: ['Angular','Typscript','Scss','Node.js','Express.js','Github Workflow'],
       github: 'https://github.com/rewellnamu/portfolio',
-      demo: '',
+      demo: 'https://portfolio-p1ls.vercel.app/',
       image: 'Screenshot (289).png'
+    },
+    {
+      title: 'Kenya Police Recruitment app',
+      description: 'A recruitment application for the Kenya Police Service. Work in progress.',
+      tech: ['Angular', 'Node.js', 'TypeScript','Express.js'],
+      github: 'https://github.com/rewellnamu/kenyaPolice-Portal',
+      demo: 'https://kenya-police-portal.vercel.app/',
+      image: 'Screenshot (313).png'
+
     },
     {
       title: 'Joy Millers clone',
       description: 'A clone of the Joy Millers website with a focus on responsive design.',
-      tech: ['Angular', 'Node.js', 'Typescript'],
+      tech: ['Angular', 'Node.js', 'Typescript', 'Express.js', 'Github Workflow'],
       github: 'https://github.com/rewellnamu/JOY-MILLERS-LTD',
-      demo: '',
+      demo: 'https://joy-millers-ltd.vercel.app/',
       image: 'Screenshot (293).png'
     },
     {
-      title: 'Recipe Platform',
-      description: 'A platform for menu recipes.',
-      tech: ['HTML/CSS'],
-      github: 'https://github.com/rewellnamu/webpage-hotel-',
-      demo: '',
-      image: 'Screenshot (11).png'
+      title: 'Exam Checker',
+      description: 'An application for tests.',
+      tech: ['HTML/CSS','Javascript', 'Github Workflow'],
+      github: 'https://github.com/rewellnamu/Quiz-Master',
+      demo: 'https://quiz-master-five-gamma.vercel.app/',
+      image: 'Screenshot (306).png'
     },
     {
-      title: 'Google Card',
-      description: 'A clone of Google Card with a focus on responsive design.',
-      tech: ['HTML/CSS'],
-      github: '',
-      demo: '',
-      image: 'Screenshot (9).png'
-    }
+      title: 'Safari test',
+      description: 'A safari test application. Tour know how',
+      tech: ['HTML/CSS','Javascript', 'Github Workflow'],
+      github: 'https://github.com/rewellnamu/Safari-TRAVEL-QUIZ',
+      demo: 'https://safari-travel-quiz.vercel.app/',
+      image: 'Screenshot (309).png'
+    },
+    {
+      title: 'Weather App',
+      description: 'A weather application that provides current weather information.',
+      tech: ['HTML/CSS','Javascript', 'Github Workflow'],
+      github: 'https://github.com/rewellnamu/Weather-App',
+      demo: 'https://weather-app-delta-flame-47.vercel.app/',
+      image: 'Screenshot (302).png'
+    },
+    {
+      title: 'Time Manager app',
+      description: 'A time management application to help users track their time.',
+      tech: ['HTML/CSS','Javascript', 'Github Workflow'],
+      github: 'https://github.com/rewellnamu/TIME-manager',
+      demo: 'https://time-manager-seven.vercel.app/',
+      image: 'Screenshot (304).png'
+    },
+    {
+      title: 'Music Player app',
+      description: 'A music player application that allows users to play and manage their music.',
+      tech: ['HTML/CSS','Javascript', 'Github Workflow'],  
+      github: 'https://github.com/rewellnamu/Music-player',
+      demo: 'https://music-player-xi-orcin.vercel.app/',
+      image: 'Screenshot (312).png'
+    },
     // Add more projects here
   ];
 }
