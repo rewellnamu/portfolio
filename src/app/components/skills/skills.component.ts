@@ -13,7 +13,7 @@ export class SkillsComponent {
   skills = [
     {
       title: 'Frontend',
-      icon: '',
+      icon: '🎨',
       items: [
         'Angular',
         'HTML5',
@@ -21,11 +21,12 @@ export class SkillsComponent {
         'JavaScript',
         'TypeScript',
         'Responsive Design',
+        'Tailwind CSS',
       ],
     },
     {
       title: 'Backend',
-      icon: '',
+      icon: '🛠️',
       items: [
         'Node.js',
         'Next.js',
@@ -37,13 +38,13 @@ export class SkillsComponent {
     },
     {
       title: 'Tools & DevOps',
-      icon: '',
-      items: ['Git & GitHub', 'Docker', 'Figma', 'Vercel', 'postman'],
+      icon: '⚙️',
+      items: ['Git & GitHub', 'Docker', 'Figma', 'Vercel', 'postman', 'npm',],
     },
     {
       title: 'AI/Other',
-      icon: '',
-      items: ['OpenAI API', 'ChatGPT Integration', 'AI Skills Matching'],
+      icon: '🤖',
+      items: ['OpenAI API', 'ChatGPT Integration', 'AI Skills Matching', 'AI Chatbots',],
     },
   ];
 }
