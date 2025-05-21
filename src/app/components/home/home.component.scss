@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: var(--background);
+  background: linear-gradient(120deg, #f8fafc 80%, #e3f0ff 100%);
   color: var(--text);
 
   .container {
@@ -27,29 +27,33 @@
 
         .highlight {
           color: var(--accent);
+          letter-spacing: 2px;
         }
       }
 
       .title {
         font-size: 2rem;
         margin-bottom: 1rem;
+        font-weight: 600;
+        color: var(--accent);
         opacity: 0.8;
       }
 
       .tagline {
-        font-size: 1.15rem;
-        font-weight: 400;
-        color: #444;
+        text-align: start;
+        font-size: 1.18rem;
+        font-weight: 500;
+        color: #333;
         line-height: 1.7;
         margin: 1.5rem 0 2rem 0;
         max-width: 600px;
         letter-spacing: 0.01em;
         font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-        background: rgba(245, 245, 245, 0.7);
-        border-left: 4px solid #1976d2;
+        background: #fff;
+        border-left: 5px solid var(--accent);
         padding: 1.2rem 1.5rem;
         border-radius: 0.5rem;
-        box-shadow: 0 2px 8px rgba(30, 64, 175, 0.04);
+        box-shadow: 0 2px 12px rgba(30, 64, 175, 0.06);
       }
 
       .buttons {
@@ -63,24 +67,27 @@
           font-weight: bold;
           text-decoration: none;
           transition: background 0.3s, color 0.3s;
-          background-color: white;
+          background: linear-gradient(90deg, var(--nav-accent) 60%, #00c6ff 100%);
+          color: #222;
+          border: none;
+          font-size: 1.08rem;
+          box-shadow: 0 2px 8px #00c6ff22;
 
-          &.primary {
-            
-            color: #080101;
-
-            &:hover {
-              background-color: yellow;
-            }
+          &:hover {
+            background: linear-gradient(90deg, #00c6ff 60%, var(--nav-accent) 100%);
+            color: #fff;
+            transform: translateY(-2px) scale(1.04);
           }
+        }
 
-          &.secondary {
-            border: 2px solid var(--accent);
-            color: black;
+        .btn.secondary {
+          background: #fff;
+          border: 2px solid var(--accent);
+          color: var(--accent);
 
-            &:hover {
-               background-color: yellow;
-            }
+          &:hover {
+            background: var(--accent);
+            color: #fff;
           }
         }
       }
