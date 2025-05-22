@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: linear-gradient(120deg, #f8fafc 80%, #e3f0ff 100%);
+  background: var(--background);
   color: var(--text);
 
   .container {
@@ -26,34 +26,39 @@
         margin-bottom: 0.5rem;
 
         .highlight {
-          color: var(--accent);
-          letter-spacing: 2px;
+          // Typewriter effect
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 0.15em solid var(--accent);
+          animation: typewriter 2.5s steps(20, end) 1s 1 normal both,
+            blink-cursor 0.75s steps(1) infinite;
+          display: inline-block;
+          max-width: 100%;
+          /* Adjust steps(20, end) to match your text length for smooth effect */
         }
       }
 
       .title {
         font-size: 2rem;
         margin-bottom: 1rem;
-        font-weight: 600;
-        color: var(--accent);
         opacity: 0.8;
+
+        // Typewriter effect
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 0.15em solid var(--accent);
+        animation: typewriter 2.5s steps(20, end) 2.5s 1 normal both,
+          blink-cursor 0.75s steps(1) infinite;
+        display: inline-block;
+        max-width: 100%;
+        /* Adjust steps(20, end) to match your text length for smooth effect */
       }
 
       .tagline {
-        text-align: start;
-        font-size: 1.18rem;
-        font-weight: 500;
-        color: #333;
-        line-height: 1.7;
-        margin: 1.5rem 0 2rem 0;
-        max-width: 600px;
-        letter-spacing: 0.01em;
-        font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-        background: #fff;
-        border-left: 5px solid var(--accent);
-        padding: 1.2rem 1.5rem;
-        border-radius: 0.5rem;
-        box-shadow: 0 2px 12px rgba(30, 64, 175, 0.06);
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+        opacity: 0.7;
       }
 
       .buttons {
@@ -67,27 +72,23 @@
           font-weight: bold;
           text-decoration: none;
           transition: background 0.3s, color 0.3s;
-          background: linear-gradient(90deg, var(--nav-accent) 60%, #00c6ff 100%);
-          color: #222;
-          border: none;
-          font-size: 1.08rem;
-          box-shadow: 0 2px 8px #00c6ff22;
+          background-color: white;
 
-          &:hover {
-            background: linear-gradient(90deg, #00c6ff 60%, var(--nav-accent) 100%);
-            color: #fff;
-            transform: translateY(-2px) scale(1.04);
+          &.primary {
+            color: #080101;
+
+            &:hover {
+              background-color: yellow;
+            }
           }
-        }
 
-        .btn.secondary {
-          background: #fff;
-          border: 2px solid var(--accent);
-          color: var(--accent);
+          &.secondary {
+            border: 2px solid var(--accent);
+            color: black;
 
-          &:hover {
-            background: var(--accent);
-            color: #fff;
+            &:hover {
+              background-color: yellow;
+            }
           }
         }
       }
@@ -107,5 +108,26 @@
         border: 4px solid var(--accent);
       }
     }
+  }
+}
+
+// Typewriter keyframes
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+// Blinking cursor keyframes
+@keyframes blink-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--accent);
   }
 }
