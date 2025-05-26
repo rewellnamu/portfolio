@@ -12,6 +12,14 @@ import { RouterModule } from '@angular/router';
 export class ProjectsComponent {
   projects = [
     {
+      title:'Cabro City App',
+      description: ' A comprehensive front-end application for managing cabro city operations.',
+      tech: ['HTML/SCSS', 'Angular', 'Typescript', ],
+      github: 'https://github.com/rewellnamu/cabro-city-APP',
+      demo: 'https://cabro-city-app.vercel.app/',
+      image: 'Screenshot (317).png'
+    },
+    {
       title: 'Workers Manager App',
       description: ' A comprehensive application for managing workers.',
       tech: ['HTML/CSS', 'Node.js', 'MongoDB', 'Javascript', 'Express.js'],
