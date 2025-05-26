@@ -14,14 +14,14 @@ export class ProjectsComponent {
     {
       title:'Cabro City App',
       description: ' A comprehensive front-end application for managing cabro city operations.',
-      tech: ['HTML/SCSS', 'Angular', 'Typescript', ],
+      tech: ['HTML/SCSS', 'Angular', 'Typescript', 'Github Workflow'],
       github: 'https://github.com/rewellnamu/cabro-city-APP',
       demo: 'https://cabro-city-app.vercel.app/',
       image: 'Screenshot (317).png'
     },
     {
       title: 'Workers Manager App',
-      description: ' A comprehensive application for managing workers.',
+      description: ' A comprehensive Full-stack application for managing workers.',
       tech: ['HTML/CSS', 'Node.js', 'MongoDB', 'Javascript', 'Express.js'],
       github: 'https://github.com/rewellnamu/WORK-MANAGER',
       demo: 'https://work-manager-wine.vercel.app/',
@@ -30,7 +30,7 @@ export class ProjectsComponent {
     {
       title: 'Kenya National Geo',
       description: 'Explore parks and wildlife in Kenya with this interactive app.',
-      tech: ['Angular', 'Node.js', 'PostgreSQL', 'TypeScript','Express.js','Github Workflow'],
+      tech: ['Angular', 'Node.js', 'PostgreSQL','Html/Scss','TypeScript','Express.js','Github Workflow'],
       github: 'https://github.com/rewellnamu/kenya-national-geo',
       demo: 'https://kenya-national-geo.vercel.app/',
       image: 'Screenshot (256).png'
@@ -38,7 +38,7 @@ export class ProjectsComponent {
     {
       title: 'Portfolio Website',
       description: 'My personal portfolio showcasing my projects and skills.',
-      tech: ['Angular','Typscript','Scss','Node.js','Express.js','Github Workflow'],
+      tech: ['Angular','Typscript','Html/Scss','Node.js','Express.js','Github Workflow'],
       github: 'https://github.com/rewellnamu/portfolio',
       demo: 'https://portfolio-p1ls.vercel.app/',
       image: 'Screenshot (289).png'
@@ -46,7 +46,7 @@ export class ProjectsComponent {
     {
       title: 'Kenya Police Recruitment app',
       description: 'A recruitment application for the Kenya Police Service. Work in progress.',
-      tech: ['Angular', 'Node.js', 'TypeScript','Express.js'],
+      tech: ['Angular','Html/Scss', 'Node.js', 'TypeScript','Express.js'],
       github: 'https://github.com/rewellnamu/kenyaPolice-Portal',
       demo: 'https://kenya-police-portal.vercel.app/',
       image: 'Screenshot (313).png'
@@ -55,7 +55,7 @@ export class ProjectsComponent {
     {
       title: 'Joy Millers clone',
       description: 'A clone of the Joy Millers website with a focus on responsive design.',
-      tech: ['Angular', 'Node.js', 'Typescript', 'Express.js', 'Github Workflow'],
+      tech: ['Angular','Html/Scss', 'Node.js', 'Typescript', 'Express.js', 'Github Workflow'],
       github: 'https://github.com/rewellnamu/JOY-MILLERS-LTD',
       demo: 'https://joy-millers-ltd.vercel.app/',
       image: 'Screenshot (293).png'
