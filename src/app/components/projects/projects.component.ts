@@ -12,6 +12,14 @@ import { RouterModule } from '@angular/router';
 export class ProjectsComponent {
   projects = [
     {
+      title: 'Workers Manager App',
+      description: ' A comprehensive application for managing workers.',
+      tech: ['HTML/CSS', 'Node.js', 'MongoDB', 'Javascript', 'Express.js'],
+      github: 'https://github.com/rewellnamu/WORK-MANAGER',
+      demo: 'https://work-manager-wine.vercel.app/',
+      image: 'Screenshot (316).png'
+    },
+    {
       title: 'Kenya National Geo',
       description: 'Explore parks and wildlife in Kenya with this interactive app.',
       tech: ['Angular', 'Node.js', 'PostgreSQL', 'TypeScript','Express.js','Github Workflow'],
