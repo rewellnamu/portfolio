@@ -12,9 +12,17 @@ import { RouterModule } from '@angular/router';
 export class ProjectsComponent {
   projects = [
     {
+      title:'School Student Data App',
+      description: ' A comprehensive fullstack application for managing students results.',
+      tech: ['React','Node.js','Express.js','MongoDB','Github Actions'],
+      github: 'https://github.com/rewellnamu/ReactStudents',
+      demo: 'https://react-students-gold.vercel.app/',
+      image: 'Screenshot (323).png'
+    },
+    {
       title:'Cabro City App',
       description: ' A comprehensive front-end application for managing cabro city operations.',
-      tech: ['HTML/SCSS', 'Angular', 'Typescript', 'Github Workflow'],
+      tech: ['HTML/SCSS', 'Angular', 'Typescript', 'Github Actions'],
       github: 'https://github.com/rewellnamu/cabro-city-APP',
       demo: 'https://cabro-city-app.vercel.app/',
       image: 'Screenshot (317).png'
@@ -30,7 +38,7 @@ export class ProjectsComponent {
     {
       title: 'Kenya National Geo',
       description: 'Explore parks and wildlife in Kenya with this interactive app.',
-      tech: ['Angular', 'Node.js', 'PostgreSQL','Html/Scss','TypeScript','Express.js','Github Workflow'],
+      tech: ['Angular', 'Node.js', 'PostgreSQL','Html/Scss','TypeScript','Express.js','Github Actions'],
       github: 'https://github.com/rewellnamu/kenya-national-geo',
       demo: 'https://kenya-national-geo.vercel.app/',
       image: 'Screenshot (256).png'
@@ -38,7 +46,7 @@ export class ProjectsComponent {
     {
       title: 'Portfolio Website',
       description: 'My personal portfolio showcasing my projects and skills.',
-      tech: ['Angular','Typscript','Html/Scss','Node.js','Express.js','Github Workflow'],
+      tech: ['Angular','Typscript','Html/Scss','Node.js','Express.js','Github Actions'],
       github: 'https://github.com/rewellnamu/portfolio',
       demo: 'https://portfolio-p1ls.vercel.app/',
       image: 'Screenshot (289).png'
@@ -55,7 +63,7 @@ export class ProjectsComponent {
     {
       title: 'Joy Millers clone',
       description: 'A clone of the Joy Millers website with a focus on responsive design.',
-      tech: ['Angular','Html/Scss', 'Node.js', 'Typescript', 'Express.js', 'Github Workflow'],
+      tech: ['Angular','Html/Scss', 'Node.js', 'Typescript', 'Express.js', 'Github Actions'],
       github: 'https://github.com/rewellnamu/JOY-MILLERS-LTD',
       demo: 'https://joy-millers-ltd.vercel.app/',
       image: 'Screenshot (293).png'
@@ -63,7 +71,7 @@ export class ProjectsComponent {
     {
       title: 'Exam Checker',
       description: 'An application for tests.',
-      tech: ['HTML/CSS','Javascript', 'Github Workflow'],
+      tech: ['HTML/CSS','Javascript', 'Github Actions'],
       github: 'https://github.com/rewellnamu/Quiz-Master',
       demo: 'https://quiz-master-five-gamma.vercel.app/',
       image: 'Screenshot (306).png'
@@ -71,7 +79,7 @@ export class ProjectsComponent {
     {
       title: 'Safari test',
       description: 'A safari test application. Tour know how',
-      tech: ['HTML/CSS','Javascript', 'Github Workflow'],
+      tech: ['HTML/CSS','Javascript', 'Github Actions'],
       github: 'https://github.com/rewellnamu/Safari-TRAVEL-QUIZ',
       demo: 'https://safari-travel-quiz.vercel.app/',
       image: 'Screenshot (309).png'
@@ -79,7 +87,7 @@ export class ProjectsComponent {
     {
       title: 'Weather App',
       description: 'A weather application that provides current weather information.',
-      tech: ['HTML/CSS','Javascript', 'Github Workflow'],
+      tech: ['HTML/CSS','Javascript', 'Github Actions'],
       github: 'https://github.com/rewellnamu/Weather-App',
       demo: 'https://weather-app-delta-flame-47.vercel.app/',
       image: 'Screenshot (302).png'
@@ -87,7 +95,7 @@ export class ProjectsComponent {
     {
       title: 'Time Manager app',
       description: 'A time management application to help users track their time.',
-      tech: ['HTML/CSS','Javascript', 'Github Workflow'],
+      tech: ['HTML/CSS','Javascript', 'Github Actions'],
       github: 'https://github.com/rewellnamu/TIME-manager',
       demo: 'https://time-manager-seven.vercel.app/',
       image: 'Screenshot (304).png'
@@ -95,7 +103,7 @@ export class ProjectsComponent {
     {
       title: 'Music Player app',
       description: 'A music player application that allows users to play and manage their music.',
-      tech: ['HTML/CSS','Javascript', 'Github Workflow'],  
+      tech: ['HTML/CSS','Javascript', 'Github Actions'],  
       github: 'https://github.com/rewellnamu/Music-player',
       demo: 'https://music-player-xi-orcin.vercel.app/',
       image: 'Screenshot (312).png'
