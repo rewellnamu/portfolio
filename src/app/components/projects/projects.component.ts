@@ -13,7 +13,7 @@ export class ProjectsComponent {
   projects = [
     {
       title: 'RECRUITMENT PORTAL',
-      description: '',
+      description: ' A full-stack application for managing police recruitment processes.',
       tech: ['Node.js', 'MongoDB', 'Express.js', 'JWT', 'Javascript', 'Html/Scss', 'Multer'],
       github: 'https://github.com/rewellnamu/POLICE-RECRUITMENT-PORTAL',
       demo: 'https://police-recruitment-portal.vercel.app/',
