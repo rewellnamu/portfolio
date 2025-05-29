@@ -19,6 +19,13 @@ certificates = [
     pdf: 'cert/Software Development.pdf'
   },
   {
+    title: 'Advanced Premium IT Admin Features',
+    issuer:'Google Skillshop',
+    year: '2025',
+    link: '/cert/Advanced Premium IT Admin Features.pdf',
+    pdf: '/cert/Advanced Premium IT Admin Features.pdf'
+  },
+  {
     title: 'INTRODUCTION TO DATA SCIENCE',
     issuer: 'CISCO',
     year: '2024',

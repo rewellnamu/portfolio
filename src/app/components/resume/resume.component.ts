@@ -12,7 +12,11 @@ import { RouterModule } from '@angular/router';
 export class ResumeComponent {
   education = [
     {
-      institution: 'CISCO NETWORKING (Netacad)',
+      institution: ' GOOGLE SKILLSHOP',
+      year: '2025'
+    },
+    {
+      institution: 'CISCO NETWORKING ACADEMY (Netacad)',
       year: '2024',
     },
     {
