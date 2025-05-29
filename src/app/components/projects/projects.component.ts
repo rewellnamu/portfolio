@@ -12,6 +12,14 @@ import { RouterModule } from '@angular/router';
 export class ProjectsComponent {
   projects = [
     {
+      title: 'RECRUITMENT PORTAL',
+      description: '',
+      tech: ['Node.js', 'MongoDB', 'Express.js', 'JWT', 'Javascript', 'Html/Scss', 'Multer'],
+      github: 'https://github.com/rewellnamu/POLICE-RECRUITMENT-PORTAL',
+      demo: 'https://police-recruitment-portal.vercel.app/',
+      image: 'Screenshot (328).png'
+    },
+    {
       title:'School Student Data App',
       description: ' A comprehensive fullstack application for managing students results.',
       tech: ['React','Node.js','Express.js','MongoDB','Github Actions'],
