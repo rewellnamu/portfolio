@@ -22,8 +22,15 @@ certificates = [
     title: 'Advanced Premium IT Admin Features',
     issuer:'Google Skillshop',
     year: '2025',
-    link: '/cert/Advanced Premium IT Admin Features.pdf',
-    pdf: '/cert/Advanced Premium IT Admin Features.pdf'
+    link: '/cert/Google Advanced Premium IT Admin Features.pdf',
+    pdf: '/cert/Google Advanced Premium IT Admin Features.pdf'
+  },
+  {
+    title: 'Premium IT Admin Features',
+    issuer: 'Google Skillshop',
+    year: '2025',
+    link: '/cert/Google Premium IT Admin Features.pdf',
+    pdf: '/cert/Google Premium IT Admin Features.pdf'
   },
   {
     title: 'INTRODUCTION TO DATA SCIENCE',
