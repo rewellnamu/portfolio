@@ -19,14 +19,14 @@ certificates = [
     pdf: 'cert/Software Development.pdf'
   },
   {
-    title: 'Advanced Premium IT Admin Features',
+    title: 'Google Advanced Premium IT Admin Features',
     issuer:'Google Skillshop',
     year: '2025',
     link: '/cert/Google Advanced Premium IT Admin Features.pdf',
     pdf: '/cert/Google Advanced Premium IT Admin Features.pdf'
   },
   {
-    title: 'Premium IT Admin Features',
+    title: 'Google Premium IT Admin Features',
     issuer: 'Google Skillshop',
     year: '2025',
     link: '/cert/Google Premium IT Admin Features.pdf',
