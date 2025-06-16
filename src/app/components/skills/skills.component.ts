@@ -15,6 +15,7 @@ export class SkillsComponent {
       title: 'Frontend',
       icon: '🎨',
       items: [
+        'React',
         'Angular',
         'HTML5',
         'CSS3 / SCSS',
