@@ -12,12 +12,28 @@ import { RouterModule } from '@angular/router';
 export class ProjectsComponent {
   projects = [
     {
-      title: 'RECRUITMENT PORTAL',
-      description: ' A full-stack application for managing police recruitment processes.',
-      tech: ['Node.js', 'MongoDB', 'Express.js', 'JWT', 'Javascript', 'Html/Scss', 'Multer'],
-      github: 'https://github.com/rewellnamu/POLICE-RECRUITMENT-PORTAL',
+      title: 'COUNTY PORTAL FULLSTACK',
+      description: ' A full-stack application for managing Kirinyaga County Government services.',
+      tech: ['Node.js', 'MongoDB', 'Express.js', 'Javascript', 'Html/Scss','Github Actions'],
+      github: 'https://github.com/rewellnamu/COUNTY-FULLSTACK',
+      demo: 'https://county-fullstack.vercel.app/',
+      image: 'Screenshot (334).png'
+    },
+    {
+      title: 'KIRINYAGA FEEDBACK APP',
+      description: ' A full-stack application for managing public participation in our counties.',
+      tech: ['React-Native', 'Node.js', 'MongoDB', 'Express.js', 'Javascript', 'Multer','Html/Scss','Github Actions'],
+      github: ['https://github.com/rewellnamu/kirinyaga-feedback-app', 'https://github.com/rewellnamu/Back-end-feedback'],
       demo: 'https://police-recruitment-portal.vercel.app/',
-      image: 'Screenshot (328).png'
+      image: 'county assembly.png'
+    },
+    {
+      title: 'COUNTY SERVICES APP',
+      description: ' A front-end application for showcasing county overall services.',
+      tech: ['Angular', 'Typescript', 'Html/Scss', 'Node.js', 'Express.js', 'Github Actions'],
+      github: 'https://github.com/rewellnamu/kirinyaga-county',
+      demo: 'https://kirinyaga-county.vercel.app/',
+      image: 'Screenshot (332).png'
     },
     {
       title:'School Student Data App',
@@ -62,7 +78,7 @@ export class ProjectsComponent {
     {
       title: 'Kenya Police Recruitment app',
       description: 'A recruitment application for the Kenya Police Service. Work in progress.',
-      tech: ['Angular','Html/Scss', 'Node.js', 'TypeScript','Express.js'],
+      tech: ['Angular','Html/Scss', 'Node.js', 'TypeScript'],
       github: 'https://github.com/rewellnamu/kenyaPolice-Portal',
       demo: 'https://kenya-police-portal.vercel.app/',
       image: 'Screenshot (313).png'
