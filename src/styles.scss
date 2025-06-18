@@ -32,4 +32,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* Subtle background pattern for professionalism */
+  background-image: linear-gradient(135deg, rgba(25,118,210,0.03) 25%, transparent 25%, transparent 50%, rgba(25,118,210,0.03) 50%, rgba(25,118,210,0.03) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
 }

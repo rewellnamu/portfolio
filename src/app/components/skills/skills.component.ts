@@ -47,5 +47,28 @@ export class SkillsComponent {
       icon: '🤖',
       items: ['OpenAI API', 'ChatGPT Integration', 'AI Skills Matching', 'AI Chatbots',],
     },
+    {
+      title: 'Graphics Design',
+      icon: '🎨',
+      items: [
+        'Canva',
+        'Adobe Photoshop',
+        'Adobe Illustrator',
+        'Figma',
+        'Logo Design',
+        'Poster Design',
+      ],
+    },
+    {
+      title: 'Soft Skills',
+      icon: '💼',
+      items: [
+        'Problem Solving',
+        'Team Collaboration',
+        'Time Management',
+        'Adaptability',
+        'Communication',
+      ],
+    },
   ];
 }
