@@ -30,9 +30,19 @@ export class GraphicsComponent {
       image: 'graphics/Brown and White Creative Steaks Food Instagram post.png',
       description: 'Engaging social media post design.',
     },
+    {
+      title: 'Business Card',
+      image: 'graphics/1.png',
+      description: 'Professional business card design.',
+    }
   ];
 
   videos = [
+    {
+      title: 'General Video',
+      src: 'graphics/_Black White Simple Cafe Logo.mp4',
+      description: 'A simple video showcasing a cafe logo.',
+    },
     {
       title: 'Promo Animation',
       src: 'graphics/White and Brown Food Facebook Video Promo.mp4',

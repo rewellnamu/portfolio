@@ -2,16 +2,10 @@
   <h2 class="section-title">Graphic Designs</h2>
   <div class="graphics-grid">
     <div class="graphic-card" *ngFor="let graphic of graphics">
-      <div class="graphic-image-wrapper">
-        <img
-          [src]="graphic.image"
-          [alt]="graphic.title"
-          class="graphic-image"
-        />
-        <div class="graphic-overlay">
-          <h3>{{ graphic.title }}</h3>
-          <p>{{ graphic.description }}</p>
-        </div>
+      <img [src]="graphic.image" [alt]="graphic.title" class="graphic-image" />
+      <div class="graphic-info">
+        <h3>{{ graphic.title }}</h3>
+        <p>{{ graphic.description }}</p>
       </div>
     </div>
   </div>
@@ -19,18 +13,10 @@
   <h2 class="section-title" style="margin-top: 3rem">Video Designs</h2>
   <div class="videos-grid">
     <div class="video-card" *ngFor="let video of videos">
-      <div class="video-wrapper">
-        <video
-          [src]="video.src"
-          loop
-          autoplay
-          muted
-          class="video-player"
-        ></video>
-        <div class="video-overlay">
-          <h3>{{ video.title }}</h3>
-          <p>{{ video.description }}</p>
-        </div>
+      <video [src]="video.src" loop autoplay muted class="video-player"></video>
+      <div class="video-info">
+        <h3>{{ video.title }}</h3>
+        <p>{{ video.description }}</p>
       </div>
     </div>
   </div>
