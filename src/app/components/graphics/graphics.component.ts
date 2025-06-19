@@ -41,7 +41,7 @@ export class GraphicsComponent {
     {
       title: 'General Video',
       src: 'graphics/_Black White Simple Cafe Logo.mp4',
-      description: 'A simple video showcasing a cafe logo.',
+      description: 'A simple video showcasing a developer sign.',
     },
     {
       title: 'Promo Animation',
