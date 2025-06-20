@@ -39,6 +39,11 @@ export class GraphicsComponent {
 
   videos = [
     {
+      title: 'Football Ad Video',
+      src: '/graphics/202506170055.mp4',
+      description: 'A simple video showcasing upcoming football events.',
+    },
+    {
       title: 'General Video',
       src: 'graphics/_Black White Simple Cafe Logo.mp4',
       description: 'A simple video showcasing a developer sign.',
