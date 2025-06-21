@@ -20,14 +20,6 @@ export class ProjectsComponent {
       image: 'Screenshot (334).png'
     },
     {
-      title: 'KIRINYAGA FEEDBACK APP',
-      description: ' A full-stack application for managing public participation in our counties.',
-      tech: ['React-Native', 'Node.js', 'MongoDB', 'Express.js', 'Javascript', 'Multer','Html/Scss','Github Actions'],
-      github: ['https://github.com/rewellnamu/kirinyaga-feedback-app', 'https://github.com/rewellnamu/Back-end-feedback'],
-      demo: '',
-      image: 'county assembly.png'
-    },
-    {
       title: 'COUNTY SERVICES APP',
       description: ' A front-end application for showcasing county overall services.',
       tech: ['Angular', 'Typescript', 'Html/Scss', 'Node.js', 'Express.js', 'Github Actions'],
@@ -36,12 +28,12 @@ export class ProjectsComponent {
       image: 'Screenshot (332).png'
     },
     {
-      title:'School Student Data App',
-      description: ' A comprehensive fullstack application for managing students results.',
-      tech: ['React','Node.js','Express.js','MongoDB','Github Actions'],
-      github: 'https://github.com/rewellnamu/ReactStudents',
-      demo: 'https://react-students-gold.vercel.app/',
-      image: 'Screenshot (323).png'
+      title: 'KIRINYAGA FEEDBACK APP',
+      description: ' A full-stack application for managing public participation in our counties.',
+      tech: ['React-Native', 'Node.js', 'MongoDB', 'Express.js', 'Javascript', 'Multer','Html/Scss','Github Actions'],
+      github: ['https://github.com/rewellnamu/kirinyaga-feedback-app'],
+      demo: 'https://kirinyaga-feedback-app.vercel.app/',
+      image: 'county assembly.png'
     },
     {
       title:'Cabro City App',
@@ -51,6 +43,15 @@ export class ProjectsComponent {
       demo: 'https://cabro-city-app.vercel.app/',
       image: 'Screenshot (317).png'
     },
+    {
+      title:'School Student Data App',
+      description: ' A comprehensive fullstack application for managing students results.',
+      tech: ['React','Node.js','Express.js','MongoDB','Github Actions'],
+      github: 'https://github.com/rewellnamu/ReactStudents',
+      demo: 'https://react-students-gold.vercel.app/',
+      image: 'Screenshot (323).png'
+    },
+    
     {
       title: 'Workers Manager App',
       description: ' A comprehensive Full-stack application for managing workers.',

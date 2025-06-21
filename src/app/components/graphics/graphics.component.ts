@@ -39,6 +39,11 @@ export class GraphicsComponent {
 
   videos = [
     {
+      title: 'Personal Portfolio Ad',
+      src: 'graphics/REWELL NAMUs Video - Jun 21, 2025-VEED.mp4',
+      description: 'A simple video showcasing a personal portfolio.',
+    },
+    {
       title: 'Football Ad Video',
       src: '/graphics/202506170055.mp4',
       description: 'A simple video showcasing upcoming football events.',
@@ -58,6 +63,11 @@ export class GraphicsComponent {
       src: 'graphics/White Restaurant Delivery Simple Starter Ad.mp4',
       description: 'social media promo video',
     },
+    {
+      title:'Intro Marketing',
+      src: 'graphics/soft.mp4',
+      description: 'A simple video showcasing a marketing intro.',
+    }
     // Add more videos as needed
   ];
 }
