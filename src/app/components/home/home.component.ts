@@ -9,5 +9,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  scrollingText = '🤾‍♂️🤾‍♂️🚲';
+  scrollingText = '⚽';
 }

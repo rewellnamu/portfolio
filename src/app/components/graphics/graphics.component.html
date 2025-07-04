@@ -1,22 +1,68 @@
 <section class="graphics-section">
-  <h2 class="section-title">Graphic Designs</h2>
-  <div class="graphics-grid">
-    <div class="graphic-card" *ngFor="let graphic of graphics">
-      <img [src]="graphic.image" [alt]="graphic.title" class="graphic-image" />
-      <div class="graphic-info">
-        <h3>{{ graphic.title }}</h3>
-        <p>{{ graphic.description }}</p>
+  <div class="graphics-layout">
+    <aside class="graphics-summary">
+      <h2 class="section-title">My Creative Portfolio</h2>
+      <p class="summary-text">
+        Welcome to my collection of graphic designs. Here you'll find
+        a showcase of my creative work, blending modern aesthetics with
+        professional polish. Each project reflects my passion for visual
+        storytelling and attention to detail.
+      </p>
+      <ul class="summary-list">
+        <li>🎨 Custom illustrations & branding</li>
+        <li>🖼️ Social media & marketing graphics</li>
+        <li>🎬 Engaging video edits & animations</li>
+        <li>✨ Consistent, high-quality visuals</li>
+      </ul>
+    </aside>
+    <div class="graphics-content">
+      <h2 class="section-title">Graphic Designs</h2>
+      <div class="graphics-grid">
+        <div class="graphic-card" *ngFor="let graphic of graphics">
+          <img
+            [src]="graphic.image"
+            [alt]="graphic.title"
+            class="graphic-image"
+          />
+          <div class="graphic-info">
+            <h3>{{ graphic.title }}</h3>
+            <p>{{ graphic.description }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <h2 class="section-title" style="margin-top: 3rem">Video Designs</h2>
-  <div class="videos-grid">
-    <div class="video-card" *ngFor="let video of videos">
-      <video [src]="video.src" loop autoplay muted class="video-player"></video>
-      <div class="video-info">
-        <h3>{{ video.title }}</h3>
-        <p>{{ video.description }}</p>
+  <div class="videos-layout">
+    <aside class="videos-summary">
+      <h2 class="section-title">Video Designs</h2>
+      <p class="summary-text">
+        Explore my dynamic video portfolio, featuring creative edits,
+        animations, and storytelling crafted for maximum impact. Each video is
+        designed to engage, inform, and inspire audiences across platforms.
+      </p>
+      <ul class="summary-list">
+        <li>🎥 Promotional & explainer videos</li>
+        <li>📱 Social media reels & shorts</li>
+        <li>🖌️ Animated graphics & intros</li>
+        <li>🚀 Creative storytelling</li>
+      </ul>
+    </aside>
+    <div class="videos-content">
+      <div class="videos-grid">
+        <div class="video-card" *ngFor="let video of videos">
+          <video
+            [src]="video.src"
+            loop
+            autoplay
+            muted
+            class="video-player"
+          ></video>
+          <div class="video-info">
+            <h3>{{ video.title }}</h3>
+            <p>{{ video.description }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
