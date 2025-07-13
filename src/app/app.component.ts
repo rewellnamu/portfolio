@@ -4,6 +4,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { GraphicsComponent } from './components/graphics/graphics.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @Component({
   standalone: true,
@@ -14,6 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
     AboutComponent,
     GraphicsComponent,
     FooterComponent,
+    ProjectsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
