@@ -12,6 +12,22 @@ import { RouterModule } from '@angular/router';
 export class ProjectsComponent {
   projects = [
     {
+      title: 'ACK CHURCH FRONT-END',
+      description: ' An Angular front-end web application meant for churches',
+      tech: ['Angular', 'Typescript', 'Scss',' npm', 'Github Actions'],
+      github: 'https://github.com/rewellnamu',
+      demo: 'https://mufu-church.vercel.app/',
+      image: 'Screenshot (340).png'
+    },
+    {
+      title: 'MBOKA CHAT APPLICATION',
+      description: ' A fullstack React-Native meant for communication, simple and easy to use',
+      tech: ['Node.js', 'MongoDB', 'Express.js', 'React-Native','Github Actions'],
+      github: 'https://github.com/rewellnamu',
+      demo: '',
+      image: 'Screenshot (336).png'
+    },
+    {
       title: 'COUNTY PORTAL FULLSTACK',
       description: ' A full-stack application for managing Kirinyaga County Government services.',
       tech: ['Node.js', 'MongoDB', 'Express.js', 'Javascript', 'Html/Scss','Github Actions'],

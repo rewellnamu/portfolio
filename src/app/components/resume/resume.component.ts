@@ -12,6 +12,10 @@ import { RouterModule } from '@angular/router';
 export class ResumeComponent {
   education = [
     {
+      institution: 'TEACH2GIVE',
+      year: '2025'
+    },
+    {
       institution: ' GOOGLE SKILLSHOP',
       year: '2025'
     },
@@ -42,16 +46,10 @@ export class ResumeComponent {
       year: '2025',
     },
     {
-      role: 'Sales Person',
+      role: 'computer technician',
       company: 'Shell-Kingongo',
       year: '2021-2024',
     },
-    {
-      role: 'Security Personnel',
-      company: 'Asset Security LTD',
-      year: '2019-2021',
-    },
-   
   ];
 
   badges = [
