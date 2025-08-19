@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
+  
   projects = [
     {
       title: 'ACK CHURCH FRONT-END',

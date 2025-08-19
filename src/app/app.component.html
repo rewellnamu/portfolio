@@ -1,3 +1,5 @@
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-preloader *ngIf="loading"></app-preloader>
+
+<app-navbar *ngIf="!loading"></app-navbar>
+<router-outlet *ngIf="!loading"></router-outlet>
+<app-footer *ngIf="!loading"></app-footer>

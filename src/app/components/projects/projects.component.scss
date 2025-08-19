@@ -1,17 +1,24 @@
 .projects-section {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
+  background: #f9fafc;
 
   .section-title {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     color: var(--nav-accent);
-    letter-spacing: 1px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    
-    animation: fadeInDown 1s;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--nav-accent);
+      margin: 1rem auto 0;
+      border-radius: 2px;
+    }
   }
 
   .projects-grid {
@@ -21,120 +28,94 @@
   }
 
   .project-card {
-    background: linear-gradient(120deg, #fff 80%, #e3f0ff 100%);
-   
+    background: #fff;
+    border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 6px 24px rgba(0, 123, 255, 0.08), 0 2px 8px rgba(0,0,0,0.07);
-    transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
-    position: relative;
-    z-index: 1;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      transform: translateY(-10px) scale(1.03) rotate(-1deg);
-      box-shadow: 0 16px 48px rgba(0, 123, 255, 0.13), 0 4px 16px rgba(0,0,0,0.10);
-
-      &::after {
-        opacity: 1;
-        transform: scale(1.08);
-      }
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(120deg, #00c6ff33 0%, #fff0 100%);
-      opacity: 0;
-      z-index: 0;
-      pointer-events: none;
-      transition: opacity 0.3s, transform 0.3s;
-      border-radius: 1.2rem;
-    }
-
-    .project-image {
-      width: 100%;
+    .project-image-wrapper {
+      overflow: hidden;
       height: 200px;
-      object-fit: cover;
-      transition: filter 0.3s;
-      border-bottom: 2px solid #e3f0ff;
 
-      &:hover {
-        filter: brightness(1.08) saturate(1.2);
+      .project-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+
+        &:hover {
+          transform: scale(1.08);
+        }
       }
     }
 
     .project-content {
-      padding: 1.3rem 1.2rem 1.2rem 1.2rem;
-      position: relative;
-      z-index: 1;
+      padding: 1.5rem;
 
-      h3 {
-        margin: 0.5rem 0;
-        font-size: 1.35rem;
-        color: var(--nav-accent);
+      .project-title {
+        font-size: 1.4rem;
         font-weight: 700;
-        letter-spacing: 0.5px;
-        transition: color 0.2s;
+        margin-bottom: 0.6rem;
+        color: #1a1a1a;
       }
 
-      p {
-        color: #444;
-        font-size: 1.05rem;
-        margin-bottom: 0.7rem;
-        animation: fadeInUp 1.2s;
+      .project-description {
+        color: #555;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1.5;
       }
 
       .tech-stack {
-        margin: 0.5rem 0 1rem 0;
+        margin-bottom: 1.2rem;
+
         span {
           display: inline-block;
-          background: linear-gradient(90deg, var(--nav-accent) 60%, #bdc013 100%);
-          color: #fff;
-          font-size: 0.8rem;
-          padding: 0.28rem 0.7rem;
+          background: #eef4ff;
+          color: var(--nav-accent);
+          font-size: 0.85rem;
+          padding: 0.3rem 0.75rem;
           border-radius: 0.5rem;
-          margin-right: 0.5rem;
-          margin-bottom: 0.25rem;
+          margin: 0.25rem;
           font-weight: 600;
-          box-shadow: 0 1px 4px rgba(0,123,255,0.08);
-          transition: background 0.2s;
-          animation: pulse 1.5s infinite alternate;
+          transition: background 0.3s ease;
+
+          &:hover {
+            background: var(--nav-accent);
+            color: #fff;
+          }
         }
       }
 
-      .project-links a {
-        display: inline-block;
-        margin-right: 1rem;
-        color: #fff;
-        background: linear-gradient(90deg, var(--nav-accent) 60%, #00c6ff 100%);
-        text-decoration: none;
-        font-weight: 600;
-        padding: 0.4em 1.1em;
-        border-radius: 2em;
-        box-shadow: 0 2px 8px rgba(0, 123, 255, 0.10);
-        transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.2s;
+      .project-links {
+        display: flex;
+        gap: 1rem;
 
-        &:hover {
-          background: linear-gradient(90deg, #00c6ff 60%, var(--nav-accent) 100%);
+        a {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          padding: 0.45rem 1.1rem;
+          font-weight: 600;
+          font-size: 0.9rem;
           color: #fff;
-          transform: translateY(-2px) scale(1.06);
-          box-shadow: 0 6px 24px rgba(0, 123, 255, 0.18);
+          background: var(--nav-accent);
+          border-radius: 2rem;
+          text-decoration: none;
+          transition: transform 0.2s, box-shadow 0.2s;
+
+          &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+          }
         }
       }
     }
-  }
-
-  // Animations
-  @keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-30px);}
-    to { opacity: 1; transform: translateY(0);}
-  }
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px);}
-    to { opacity: 1; transform: translateY(0);}
-  }
-  @keyframes pulse {
-    from { opacity: 0.7;}
-    to { opacity: 1;}
   }
 }

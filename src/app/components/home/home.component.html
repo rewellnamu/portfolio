@@ -1,71 +1,62 @@
-
 <section class="home">
   <div class="container">
-    <div class="scrolling-text">
-      <span>{{ scrollingText }}</span>
-    </div>
+    <!-- Left Side: Text -->
     <div class="text-content">
-      <h1><span class="highlight">REWELL MUNENE</span></h1>
+      <div class="scrolling-text">
+        <span>{{ scrollingText }}</span>
+      </div>
+
+      <h1><span class="highlight">Rewell Munene</span></h1>
       <h2 class="title">Full-Stack Software Developer | Networking</h2>
-      <ul class="tagline compact-tagline">
+
+      <p class="intro">
+        I specialize in building <strong>responsive full-stack applications</strong> with a focus on user experience and performance.  
+        I also enjoy working on DIY projects, mostly with Raspberry Pi.
+      </p>
+
+      <ul class="skills">
+        <li>Angular | React | JavaScript | TypeScript | Node.js | Python</li>
+        <li>Nest.js | Express | Databases | HTML/CSS</li>
+        <li>Fascinated by embedding software into physical devices</li>
         <li>
-          I specialize in building responsive, full-stack applications with a
-          strong focus on user experience and performance. I have a deep appreciation
-           for visual design and enjoy diy projects mostly using raspberry pi.
-        </li>
-        <li>
-         Angular | React | Javascript | Typescript | python | Node.js | Nest.js | Express | Databases | Html/Css
-        </li>
-        <li>The idea of building a software/programme and flushing it into a physical device
-          that supports various functionalities is fascinating to me.</li>
-        <li>
-          I'm passionate about
-          <strong>creating innovative solutions</strong> that make a difference.
+          Passionate about <strong>creating innovative solutions</strong> that make a difference
         </li>
       </ul>
+
       <div class="buttons">
-        <a class="btn primary" routerLink="/projects">View Projects</a>
-        <a class="btn secondary" routerLink="/contact">Contact Me</a>
+        <a class="btn primary" routerLink="/projects">🚀 View Projects</a>
+        <a class="btn secondary" routerLink="/contact">📩 Contact Me</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/rewellnamu" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/rewell-munene-7633b4232" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/munene_rewell/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/rewell.munene" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
       </div>
     </div>
+
+    <!-- Right Side: Image -->
     <div class="image-content">
-      <img src="bg/0811.gif" alt="Profile Picture" class="profile-img" />
-      <div class="social-links">
-        <a
-          href="https://github.com/rewellnamu"
-          target="_blank"
-          aria-label="GitHub"
-        >
-          <img src="social/icons8-github-32.png" alt="GitHub" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/rewell-munene-7633b4232"
-          target="_blank"
-          aria-label="LinkedIn"
-        >
-          <img src="social/icons8-linkedin-48.png" alt="LinkedIn" />
-        </a>
-        <a
-          href="https://www.instagram.com/munene_rewell/"
-          target="_blank"
-          aria-label="Instagram"
-        >
-          <img src="social/icons8-instagram-48.png" alt="Instagram" />
-        </a>
-        <a
-          href="https://www.facebook.com/rewell.munene"
-          target="_blank"
-          aria-label="Facebook"
-        >
-          <img src="social/icons8-facebook-48.png" alt="Facebook" />
-        </a>
+      <div class="profile-wrapper">
+        <img src="bg/0811.gif" alt="Profile Picture" class="profile-img" />
       </div>
     </div>
   </div>
 </section>
-<section class="contact projects-showcase">
+
+<!-- Projects Showcase -->
+<section class="projects-showcase">
   <div class="container">
-    <h2>Sample Projects</h2>
+    <h2>🌟 Featured Projects</h2>
     <p>
       Explore some of my featured work below. For more, visit my
       <a href="https://github.com/rewellnamu" target="_blank">GitHub</a>.
@@ -73,46 +64,24 @@
     <div class="projects-grid">
       <div class="project-card">
         <h3>Portfolio Website</h3>
-        <p>
-          A modern, responsive portfolio built with Angular and SCSS, showcasing
-          my skills and projects.
-        </p>
-        <a
-          href="https://github.com/rewellnamu"
-          target="_blank"
-          class="project-link"
-          >View on GitHub</a
-        >
+        <p>A modern, responsive portfolio built with Angular & SCSS.</p>
+        <a href="https://github.com/rewellnamu" target="_blank" class="project-link">🔗 View on GitHub</a>
       </div>
       <div class="project-card">
         <h3>Hospital Management App</h3>
-        <p>
-          A full-stack hospital management application with user authentication,
-          built using Node.js, Express, React-native, and MongoDB.
-        </p>
-        <a
-          href="https://github.com/rewellnamu"
-          target="_blank"
-          class="project-link"
-          >View on GitHub</a
-        >
+        <p>Full-stack hospital system with authentication & MongoDB backend.</p>
+        <a href="https://github.com/rewellnamu" target="_blank" class="project-link">🔗 View on GitHub</a>
       </div>
       <div class="project-card">
         <h3>Weather Dashboard</h3>
-        <p>
-          A real-time weather dashboard using Angular and OpenWeatherMap API,
-          featuring location search and forecasts.
-        </p>
-        <a
-          href="https://github.com/rewellnamu"
-          target="_blank"
-          class="project-link"
-          >View on GitHub</a
-        >
+        <p>Real-time Angular weather dashboard using OpenWeatherMap API.</p>
+        <a href="https://github.com/rewellnamu" target="_blank" class="project-link">🔗 View on GitHub</a>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Other Sections -->
 <app-projects></app-projects>
 <app-graphics></app-graphics>
 <app-about></app-about>
