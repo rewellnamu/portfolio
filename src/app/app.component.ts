@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { PreloaderComponent } from './preloader/preloader.component';
-import { CommonModule } from '@angular/common';
-
+import { CommonModule} from '@angular/common';
 
 @Component({
   standalone: true,
@@ -13,7 +11,6 @@ import { CommonModule } from '@angular/common';
     RouterOutlet,
     NavbarComponent,
     FooterComponent,
-    PreloaderComponent,
     CommonModule
   ],
   templateUrl: './app.component.html',
@@ -21,12 +18,12 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent implements OnInit {
   title = 'portfolio';
-  loading = true;
+  isLoading = true;
 
   ngOnInit() {
-    // simulate loading time (e.g., 8 seconds)
+    // Simulate loading delay (2 seconds), you can tie this to real logic
     setTimeout(() => {
-      this.loading = false;
+      this.isLoading = false;
     }, 8000);
   }
 }
