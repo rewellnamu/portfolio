@@ -21,9 +21,9 @@ export class AppComponent implements OnInit {
   isLoading = true;
 
   ngOnInit() {
-    // Simulate loading delay (2 seconds), you can tie this to real logic
+    // Simulate loading delay (10 seconds), you can tie this to real logic
     setTimeout(() => {
       this.isLoading = false;
-    }, 8000);
+    }, 10000);
   }
 }
