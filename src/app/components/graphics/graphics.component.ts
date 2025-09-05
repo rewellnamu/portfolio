@@ -41,33 +41,48 @@ export class GraphicsComponent {
   videos = [
     {
       title: 'Personal Portfolio Ad',
-      src: 'graphics/REWELL NAMUs Video - Jun 21, 2025-VEED.mp4',
+      src: 'cut/0821(1).mp4',
       description: 'A simple video showcasing a personal portfolio.',
     },
     {
       title: 'Football Ad Video',
-      src: '/graphics/202506170055.mp4',
+      src: 'cut/0819(2).mp4',
       description: 'A simple video showcasing upcoming football events.',
     },
     {
       title: 'General Video',
-      src: 'graphics/_Black White Simple Cafe Logo.mp4',
+      src: 'cut/0819.mp4',
       description: 'A simple video showcasing a developer sign.',
     },
     {
       title: 'Promo Animation',
-      src: 'graphics/White and Brown Food Facebook Video Promo.mp4',
+      src: 'cut/0818 (1)(7).mp4',
       description: 'social media promo for a product launch.',
     },
     {
       title: 'Company Reveal',
-      src: 'graphics/White Restaurant Delivery Simple Starter Ad.mp4',
+      src: 'cut/0818 (1)(6).mp4',
       description: 'social media promo video',
     },
     {
       title:'Intro Marketing',
-      src: 'graphics/soft.mp4',
+      src: 'cut/0818 (1)(5).mp4',
       description: 'A simple video showcasing a marketing intro.',
+    },
+    {
+      title:'',
+      src: 'cut/0818 (1)(3).mp4',
+      description: '',
+    },
+    {
+      title: '',
+      src:'cut/0818 (1).mp4',
+      description:'',
+    },
+    {
+      title: '',
+      src:'cut/0818 (1)(1).mp4',
+      description:'',
     }
     // Add more videos as needed
   ];
