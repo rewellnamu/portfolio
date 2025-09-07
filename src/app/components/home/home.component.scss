@@ -91,15 +91,35 @@
 
     .social-links {
       display: flex;
-      gap: 1rem;
-      margin-top: 1rem;
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+      position: relative;
+      z-index: 2;
+
       a {
-        font-size: 1.5rem;
-        color: #9ca3af;
-        transition: 0.3s;
-        &:hover {
-          color: #60a5fa;
-          transform: scale(1.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        font-size: 1.6rem;
+        color: #2563eb;
+        background: #fff;
+        border-radius: 50%;
+        box-shadow: 0 2px 12px rgba(37, 99, 235, 0.1);
+        transition:
+          color 0.22s,
+          background 0.22s,
+          box-shadow 0.18s,
+          transform 0.16s;
+
+        &:hover,
+        &:focus {
+          color: #fff;
+          background: linear-gradient(135deg, #2563eb 60%, #facc15 100%);
+          box-shadow: 0 6px 24px rgba(37, 99, 235, 0.18);
+          transform: translateY(-2px) scale(1.13);
+          outline: none;
         }
       }
     }
@@ -115,7 +135,7 @@
       border-radius: 50%;
       padding: 8px;
       background: linear-gradient(135deg, #60a5fa, #3b82f6);
-      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 
       .profile-img {
         width: 280px;
@@ -160,13 +180,13 @@
     border-radius: 1rem;
     padding: 2rem;
     text-align: left;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.25s, box-shadow 0.25s, border 0.25s;
     border: 1px solid transparent;
 
     &:hover {
       transform: translateY(-6px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
       border: 1px solid #2563eb;
     }
 
