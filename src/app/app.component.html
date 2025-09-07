@@ -1,12 +1,5 @@
 <div *ngIf="isLoading" class="preloader">
-  <!-- Example: spinner animation -->
-  <!-- <div class="spinner"></div> -->
-  
-  <!-- Or replace with GIF/Video -->
-  <img src="bg/2GM1K4IA2WM3GHKH.gif" style="width: 20%; height: 40%; border-radius: 100px; border: 5px solid #ccc;" alt="Loading..." />
-  <!-- <video autoplay muted loop>
-      <source src="assets/loader.mp4" type="video/mp4">
-  </video> -->
+  <app-preloader></app-preloader>
 </div>
 
 <div [class.hidden]="isLoading" class="main-content">

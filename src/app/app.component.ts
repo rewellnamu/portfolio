@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CommonModule} from '@angular/common';
+import { PreloaderComponent } from './preloader/preloader.component';
 
 @Component({
   standalone: true,
@@ -11,7 +12,8 @@ import { CommonModule} from '@angular/common';
     RouterOutlet,
     NavbarComponent,
     FooterComponent,
-    CommonModule
+    CommonModule,
+    PreloaderComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

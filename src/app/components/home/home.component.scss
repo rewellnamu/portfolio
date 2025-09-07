@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: 95vh;
-  background: linear-gradient(135deg, #1f2937, #111827);
+  // background: linear-gradient(135deg, #1f2937, #111827);
   color: #f9fafb;
 
   .container {
@@ -92,6 +92,7 @@
     .social-links {
       display: flex;
       gap: 1rem;
+      margin-top: 1rem;
       a {
         font-size: 1.5rem;
         color: #9ca3af;

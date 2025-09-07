@@ -19,6 +19,30 @@
     animation: spin 1s linear infinite;
   }
 
+  .spinner.stylish {
+    width: 80px;
+    height: 80px;
+    border: 8px solid #2563eb33;
+    border-top: 8px solid #facc15;
+    border-right: 8px solid #2563eb;
+    border-radius: 50%;
+    animation: spin 1.2s linear infinite;
+    box-shadow: 0 0 32px #2563eb55, 0 0 8px #facc15aa;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inner-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2563eb 60%, #facc15 100%);
+      box-shadow: 0 0 16px #facc1588, 0 0 8px #2563eb88;
+      display: block;
+    }
+  }
+
   .bg-video {
     width: 100%;
     height: 100%;
