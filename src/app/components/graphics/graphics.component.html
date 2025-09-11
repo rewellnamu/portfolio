@@ -51,12 +51,15 @@
       <div class="videos-grid">
         <div class="video-card" *ngFor="let video of videos">
           <video
-            [src]="video.src"
-            loop
-            autoplay
-            muted
-            class="video-player"
-          ></video>
+  [src]="video.src"
+  loop
+  autoplay
+  muted
+  playsinline
+  preload="metadata"
+  class="video-player"
+  (loadeddata)="ensureVideoMuted($event)"
+></video>
           <div class="video-info">
             <h3>{{ video.title }}</h3>
             <p>{{ video.description }}</p>

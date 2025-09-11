@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 
 @Component({
   standalone: true,
@@ -9,7 +8,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './graphics.component.html',
   styleUrls: ['./graphics.component.scss'],
 })
-export class GraphicsComponent {
+export class GraphicsComponent implements AfterViewInit {
   graphics = [
     {
       title: 'Poster Design',
@@ -84,6 +83,33 @@ export class GraphicsComponent {
       src:'cut/0818 (1)(1).mp4',
       description:'',
     }
-    // Add more videos as needed
   ];
+
+  ngAfterViewInit() {
+    // Ensure all videos are properly muted after view initialization
+    setTimeout(() => {
+      this.muteAllVideos();
+    }, 100);
+  }
+
+  private muteAllVideos() {
+    const videos = document.querySelectorAll('.video-player') as NodeListOf<HTMLVideoElement>;
+    videos.forEach(video => {
+      video.muted = true;
+      video.volume = 0;
+      
+      // Add event listener to ensure muting persists
+      video.addEventListener('loadeddata', () => {
+        video.muted = true;
+        video.volume = 0;
+      });
+    });
+  }
+
+  // Method to handle individual video muting
+  ensureVideoMuted(event: any) {
+    const video = event.target as HTMLVideoElement;
+    video.muted = true;
+    video.volume = 0;
+  }
 }

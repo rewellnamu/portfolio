@@ -1,56 +1,139 @@
 <footer class="footer">
   <div class="footer-content">
-    <div class="footer-main">
-      <span class="footer-brand">
-        <span class="footer-logo">RM</span>
-        <span class="footer-name">Rewell Munene</span>
-      </span>
-      <span class="footer-links">
-        <a
-          href="https://github.com/rewellnamu"
-          target="_blank"
-          aria-label="GitHub"
-          class="footer-icon-link"
-        >
-          <svg class="footer-icon" viewBox="0 0 24 24">
-            <!-- GitHub SVG -->
-            <path
-              d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.38-2.03 1.02-2.75-.1-.26-.44-1.3.1-2.7 0 0 .83-.27 2.75 1.03a9.36 9.36 0 0 1 2.5-.34c.85 0 1.7.11 2.5.34 1.92-1.3 2.75-1.03 2.75-1.03.54 1.4.2 2.44.1 2.7.63.72 1.02 1.63 1.02 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .26.18.57.69.47A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"
-              fill="currentColor"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/rewell-munene-7633b4232"
-          target="_blank"
-          aria-label="LinkedIn"
-          class="footer-icon-link"
-        >
-          <svg class="footer-icon" viewBox="0 0 24 24">
-            <!-- LinkedIn SVG -->
-            <path
-              d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.97 0-1.75-.79-1.75-1.76 0-.97.78-1.76 1.75-1.76s1.75.79 1.75 1.76c0 .97-.78 1.76-1.75 1.76zm13.5 11.28h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.61 2.01 3.61 4.62v5.58z"
-              fill="currentColor"
-            />
-          </svg>
-        </a>
-        <a
-          href="mailto:riwenamu@gmail.com"
-          aria-label="Email"
-          class="footer-icon-link"
-        >
-          <svg class="footer-icon" viewBox="0 0 24 24">
-            <!-- Email SVG -->
-            <path
-              d="M12 13.065 2.4 6.6A2 2 0 0 1 4 4h16a2 2 0 0 1 1.6 2.6l-9.6 6.465zm9.6-7.465A4 4 0 0 0 20 2H4a4 4 0 0 0-1.6.6l10.6 7.165L21.6 5.6zM2 6.6V20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6.6l-10 6.765L2 6.6z"
-              fill="currentColor"
-            />
-          </svg>
-        </a>
-      </span>
+    <!-- Main Footer Content -->
+    <div class="footer-grid">
+      <!-- Brand Section -->
+      <div class="footer-section footer-brand-section">
+        <div class="footer-brand">
+          <span class="footer-logo">RM</span>
+          <div class="footer-brand-text">
+            <span class="footer-name">Rewell Munene</span>
+            <span class="footer-title">Full-Stack Developer</span>
+          </div>
+        </div>
+        <p class="footer-description">
+          Crafting modern, responsive web applications with a focus on user experience, 
+          performance optimization, and cybersecurity best practices.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3 class="footer-heading">Quick Links</h3>
+        <ul class="footer-list">
+          <li><a routerLink="/certificates" class="footer-link">Info</a></li>
+          <li><a routerLink="/skills" class="footer-link">Skills</a></li>
+          <li><a routerLink="/projects" class="footer-link">Projects</a></li>
+          <li><a routerLink="/contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-section">
+        <h3 class="footer-heading">Services</h3>
+        <ul class="footer-list">
+          <li><span class="footer-service">Web Development</span></li>
+          <li><span class="footer-service">UI/UX Design</span></li>
+          <li><span class="footer-service">Mobile Applications</span></li>
+          <li><span class="footer-service">API Development</span></li>
+          <li><span class="footer-service">System Security</span></li>
+          <li><span class="footer-service">Network Solutions</span></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section">
+        <h3 class="footer-heading">Get In Touch</h3>
+        <div class="footer-contact">
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 13.065 2.4 6.6A2 2 0 0 1 4 4h16a2 2 0 0 1 1.6 2.6l-9.6 6.465z"/>
+            </svg>
+            <a href="mailto:riwenamu@gmail.com" class="contact-link">riwenamu&#64;gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <span class="contact-text">Nairobi, Kenya</span>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-social">
+          <a
+            href="https://github.com/rewellnamu"
+            target="_blank"
+            aria-label="GitHub Profile"
+            class="social-link"
+          >
+            <svg class="social-icon" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.38-2.03 1.02-2.75-.1-.26-.44-1.3.1-2.7 0 0 .83-.27 2.75 1.03a9.36 9.36 0 0 1 2.5-.34c.85 0 1.7.11 2.5.34 1.92-1.3 2.75-1.03 2.75-1.03.54 1.4.2 2.44.1 2.7.63.72 1.02 1.63 1.02 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .26.18.57.69.47A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rewell-munene-7633b4232"
+            target="_blank"
+            aria-label="LinkedIn Profile"
+            class="social-link"
+          >
+            <svg class="social-icon" viewBox="0 0 24 24">
+              <path
+                d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.97 0-1.75-.79-1.75-1.76 0-.97.78-1.76 1.75-1.76s1.75.79 1.75 1.76c0 .97-.78 1.76-1.75 1.76zm13.5 11.28h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.76 1.38-1.56 2.85-1.56 3.05 0 3.61 2.01 3.61 4.62v5.58z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a
+            href="mailto:riwenamu@gmail.com"
+            aria-label="Send Email"
+            class="social-link"
+          >
+            <svg class="social-icon" viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://twitter.com/your-handle"
+            target="_blank"
+            aria-label="Twitter Profile"
+            class="social-link"
+          >
+            <svg class="social-icon" viewBox="0 0 24 24">
+              <path
+                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
+
+    <!-- Footer Divider -->
+    <div class="footer-divider"></div>
+
+    <!-- Footer Bottom -->
     <div class="footer-bottom">
-      <span>&copy; {{ currentYear }} Rewell Munene. All rights reserved.</span>
+      <div class="footer-bottom-content">
+        <p class="copyright">
+          &copy; {{ currentYear }} Rewell Munene. All rights reserved.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#privacy" class="footer-bottom-link">Privacy Policy</a>
+          <a href="#terms" class="footer-bottom-link">Terms of Service</a>
+          <a href="#sitemap" class="footer-bottom-link">Sitemap</a>
+        </div>
+        <p class="footer-credit">
+          Made with <span class="heart">♥</span> in Kenya
+        </p>
+      </div>
     </div>
   </div>
 </footer>
