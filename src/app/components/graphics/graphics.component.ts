@@ -39,34 +39,34 @@ export class GraphicsComponent implements AfterViewInit {
 
   videos = [
     {
-      title: 'Personal Portfolio Ad',
+      title: '',
       src: 'cut/0821(1).mp4',
-      description: 'A simple video showcasing a personal portfolio.',
+      description: '',
     },
     {
-      title: 'Football Ad Video',
+      title: '',
       src: 'cut/0819(2).mp4',
-      description: 'A simple video showcasing upcoming football events.',
+      description: '',
     },
     {
-      title: 'General Video',
+      title: '',
       src: 'cut/0819.mp4',
-      description: 'A simple video showcasing a developer sign.',
+      description: '',
     },
     {
-      title: 'Promo Animation',
+      title: '',
       src: 'cut/0818 (1)(7).mp4',
-      description: 'social media promo for a product launch.',
+      description: '',
     },
     {
-      title: 'Company Reveal',
+      title: '',
       src: 'cut/0818 (1)(6).mp4',
-      description: 'social media promo video',
+      description: '',
     },
     {
-      title:'Intro Marketing',
+      title:'',
       src: 'cut/0818 (1)(5).mp4',
-      description: 'A simple video showcasing a marketing intro.',
+      description: '',
     },
     {
       title:'',
