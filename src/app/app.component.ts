@@ -26,6 +26,6 @@ export class AppComponent implements OnInit {
     // Simulate loading delay (10 seconds), you can tie this to real logic
     setTimeout(() => {
       this.isLoading = false;
-    }, 10000);
+    }, 5000);
   }
 }

@@ -1,16 +1,41 @@
 <nav class="navbar">
   <div class="logo">
-    <img src="bg/542322477_18519632902018542_1381975457738715263_n.jpg" alt="Walking Person Animation" class="walk-animation" />
-    <!-- <span>DEVELOPER</span> -->
+    <img 
+      src="bg/542322477_18519632902018542_1381975457738715263_n.jpg" 
+      alt="TISTI Group Logo" 
+      class="walk-animation" 
+    />
     <span>FOUNDER TISTI GROUP</span>
   </div>
-  <ul class="nav-links">
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/projects">Projects</a></li>
-    <li><a routerLink="/contact">Contact</a></li>
-    <li><a routerLink="/graphics">Graphics</a></li>
-    <li><a routerLink="/certificates">Info</a></li>
-    <li><a routerLink="/skills">Skills</a></li>
+
+  <ul class="nav-links" [class.active]="isMenuOpen" (click)="closeMenu()">
+    <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+    <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    <li><a routerLink="/graphics" routerLinkActive="active">Graphics</a></li>
+    <li><a routerLink="/certificates" routerLinkActive="active">Info</a></li>
+    <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
   </ul>
-  <app-theme-toggle></app-theme-toggle>
+
+  <div class="nav-actions">
+    <app-theme-toggle></app-theme-toggle>
+    
+    <button 
+      class="menu-toggle" 
+      [class.active]="isMenuOpen"
+      (click)="toggleMenu()"
+      aria-label="Toggle navigation menu"
+      [attr.aria-expanded]="isMenuOpen"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <div 
+    class="menu-overlay" 
+    [class.active]="isMenuOpen"
+    (click)="closeMenu()"
+  ></div>
 </nav>
