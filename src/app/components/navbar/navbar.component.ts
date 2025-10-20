@@ -1,7 +1,8 @@
 import { Component, HostListener, Inject, OnDestroy, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router, NavigationEnd } from '@angular/router';
 import { ThemeToggleComponent } from "../theme-toggle/theme-toggle.component";
+import { filter } from 'rxjs/operators';
 
 @Component({
   imports: [RouterModule, ThemeToggleComponent],
@@ -13,10 +14,23 @@ import { ThemeToggleComponent } from "../theme-toggle/theme-toggle.component";
 export class NavbarComponent implements OnDestroy {
   isMenuOpen = false;
   isBrowser: boolean;
+  isScrolled = false;
+  private routerSubscription: any;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
-    // Detect if code is running in the browser
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private router: Router
+  ) {
     this.isBrowser = isPlatformBrowser(this.platformId);
+    
+    // Close menu on route change
+    if (this.isBrowser) {
+      this.routerSubscription = this.router.events
+        .pipe(filter(event => event instanceof NavigationEnd))
+        .subscribe(() => {
+          this.closeMenu();
+        });
+    }
   }
 
   toggleMenu() {
@@ -32,13 +46,20 @@ export class NavbarComponent implements OnDestroy {
   }
 
   private toggleBodyScroll() {
-    if (!this.isBrowser) return; // Prevent SSR crash
+    if (!this.isBrowser) return;
 
     if (this.isMenuOpen) {
       document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = this.getScrollbarWidth() + 'px';
     } else {
       document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
     }
+  }
+
+  private getScrollbarWidth(): number {
+    if (!this.isBrowser) return 0;
+    return window.innerWidth - document.documentElement.clientWidth;
   }
 
   // Close menu on ESC key
@@ -57,10 +78,22 @@ export class NavbarComponent implements OnDestroy {
     }
   }
 
+  // Add scroll effect to navbar
+  @HostListener('window:scroll')
+  onScroll() {
+    if (this.isBrowser) {
+      this.isScrolled = window.scrollY > 20;
+    }
+  }
+
   ngOnDestroy() {
     if (this.isBrowser) {
-      // Clean up body scroll lock on component destroy
       document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+    }
+    
+    if (this.routerSubscription) {
+      this.routerSubscription.unsubscribe();
     }
   }
 }

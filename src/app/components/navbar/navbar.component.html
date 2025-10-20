@@ -1,41 +1,106 @@
-<nav class="navbar">
-  <div class="logo">
-    <img 
-      src="bg/542322477_18519632902018542_1381975457738715263_n.jpg" 
-      alt="TISTI Group Logo" 
-      class="walk-animation" 
-    />
-    <span>FOUNDER TISTI GROUP</span>
-  </div>
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="nav-container">
+    <a routerLink="/" class="logo" aria-label="TISTI Group Home">
+      <img
+        src="bg/542322477_18519632902018542_1381975457738715263_n.jpg"
+        alt="TISTI Group Logo"
+        class="walk-animation"
+        loading="eager"
+      />
+      <span>FOUNDER TISTI GROUP</span>
+    </a>
 
-  <ul class="nav-links" [class.active]="isMenuOpen" (click)="closeMenu()">
-    <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-    <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
-    <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-    <li><a routerLink="/graphics" routerLinkActive="active">Graphics</a></li>
-    <li><a routerLink="/certificates" routerLinkActive="active">Info</a></li>
-    <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
-  </ul>
-
-  <div class="nav-actions">
-    <app-theme-toggle></app-theme-toggle>
-    
-    <button 
-      class="menu-toggle" 
+    <ul 
+      class="nav-links" 
       [class.active]="isMenuOpen"
-      (click)="toggleMenu()"
-      aria-label="Toggle navigation menu"
-      [attr.aria-expanded]="isMenuOpen"
+      role="navigation"
+      aria-label="Main navigation"
     >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+      <li>
+        <a 
+          routerLink="/" 
+          routerLinkActive="active" 
+          [routerLinkActiveOptions]="{exact: true}"
+          (click)="closeMenu()"
+        >
+          <span class="nav-icon">🏠</span>
+          <span class="nav-text">Home</span>
+        </a>
+      </li>
+      <li>
+        <a 
+          routerLink="/projects" 
+          routerLinkActive="active"
+          (click)="closeMenu()"
+        >
+          <span class="nav-icon">💼</span>
+          <span class="nav-text">Projects</span>
+        </a>
+      </li>
+      <li>
+        <a 
+          routerLink="/contact" 
+          routerLinkActive="active"
+          (click)="closeMenu()"
+        >
+          <span class="nav-icon">📧</span>
+          <span class="nav-text">Contact</span>
+        </a>
+      </li>
+      <li>
+        <a 
+          routerLink="/graphics" 
+          routerLinkActive="active"
+          (click)="closeMenu()"
+        >
+          <span class="nav-icon">🎨</span>
+          <span class="nav-text">Graphics</span>
+        </a>
+      </li>
+      <li>
+        <a 
+          routerLink="/certificates" 
+          routerLinkActive="active"
+          (click)="closeMenu()"
+        >
+          <span class="nav-icon">📜</span>
+          <span class="nav-text">Info</span>
+        </a>
+      </li>
+      <li>
+        <a 
+          routerLink="/skills" 
+          routerLinkActive="active"
+          (click)="closeMenu()"
+        >
+          <span class="nav-icon">⚡</span>
+          <span class="nav-text">Skills</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="nav-actions">
+      <app-theme-toggle></app-theme-toggle>
+
+      <button
+        class="menu-toggle"
+        [class.active]="isMenuOpen"
+        (click)="toggleMenu()"
+        aria-label="Toggle navigation menu"
+        [attr.aria-expanded]="isMenuOpen"
+        type="button"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 
-  <div 
-    class="menu-overlay" 
+  <div
+    class="menu-overlay"
     [class.active]="isMenuOpen"
     (click)="closeMenu()"
+    aria-hidden="true"
   ></div>
 </nav>

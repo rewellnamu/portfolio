@@ -1,6 +1,8 @@
 <section class="graphics-section">
+  <!-- Graphics Section -->
   <div class="graphics-layout">
     <aside class="graphics-summary">
+      <div class="summary-icon">🎨</div>
       <h2 class="section-title">My Creative Portfolio</h2>
       <p class="summary-text">
         Welcome to my collection of graphic designs. Here you'll find
@@ -9,31 +11,79 @@
         storytelling and attention to detail.
       </p>
       <ul class="summary-list">
-        <li>🎨 Custom illustrations & branding</li>
-        <li>🖼️ Social media & marketing graphics</li>
-        <li>🎬 Engaging video edits & animations</li>
-        <li>✨ Consistent, high-quality visuals</li>
+        <li>
+          <span class="list-icon">🎨</span>
+          <span>Custom illustrations & branding</span>
+        </li>
+        <li>
+          <span class="list-icon">🖼️</span>
+          <span>Social media & marketing graphics</span>
+        </li>
+        <li>
+          <span class="list-icon">✨</span>
+          <span>Consistent, high-quality visuals</span>
+        </li>
+        <li>
+          <span class="list-icon">🚀</span>
+          <span>Professional design solutions</span>
+        </li>
       </ul>
+      <div class="summary-stats">
+        <div class="stat-item">
+          <span class="stat-number">{{ graphics.length }}+</span>
+          <span class="stat-label">Designs</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Quality</span>
+        </div>
+      </div>
     </aside>
+
     <div class="graphics-content">
-      <h2 class="section-title">Graphic Designs</h2>
+      <div class="content-header">
+        <h2 class="section-title">Graphic Designs</h2>
+        <p class="content-subtitle">Click any image to view in full size</p>
+      </div>
+      
       <div class="graphics-grid">
-        <div class="graphic-card" *ngFor="let graphic of graphics">
-          <img
-            [src]="graphic.image"
-            [alt]="graphic.title"
-            class="graphic-image"
-          />
+        <article 
+          class="graphic-card" 
+          *ngFor="let graphic of graphics; trackBy: trackByGraphic"
+          (click)="openImageModal(graphic)"
+          tabindex="0"
+          role="button"
+          [attr.aria-label]="'View ' + graphic.title"
+          (keydown.enter)="openImageModal(graphic)"
+          (keydown.space)="openImageModal(graphic)"
+        >
+          <div class="card-image-wrapper">
+            <img
+              [src]="graphic.image"
+              [alt]="graphic.title"
+              class="graphic-image"
+              loading="lazy"
+            />
+            <div class="image-overlay">
+              <span class="overlay-icon">🔍</span>
+              <span class="overlay-text">View Full Size</span>
+            </div>
+            <span class="card-category" *ngIf="graphic.category">{{ graphic.category }}</span>
+          </div>
           <div class="graphic-info">
             <h3>{{ graphic.title }}</h3>
             <p>{{ graphic.description }}</p>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </div>
+
+  <!-- Videos Section -->
   <div class="videos-layout">
     <aside class="videos-summary">
+      <div class="summary-icon">🎬</div>
       <h2 class="section-title">Video Designs</h2>
       <p class="summary-text">
         Explore my dynamic video portfolio, featuring creative edits,
@@ -41,31 +91,105 @@
         designed to engage, inform, and inspire audiences across platforms.
       </p>
       <ul class="summary-list">
-        <li>🎥 Promotional & explainer videos</li>
-        <li>📱 Social media reels & shorts</li>
-        <li>🖌️ Animated graphics & intros</li>
-        <li>🚀 Creative storytelling</li>
+        <li>
+          <span class="list-icon">🎥</span>
+          <span>Promotional & explainer videos</span>
+        </li>
+        <li>
+          <span class="list-icon">📱</span>
+          <span>Social media reels & shorts</span>
+        </li>
+        <li>
+          <span class="list-icon">🖌️</span>
+          <span>Animated graphics & intros</span>
+        </li>
+        <li>
+          <span class="list-icon">🚀</span>
+          <span>Creative storytelling</span>
+        </li>
       </ul>
+      <div class="summary-stats">
+        <div class="stat-item">
+          <span class="stat-number">{{ videos.length }}+</span>
+          <span class="stat-label">Videos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">HD</span>
+          <span class="stat-label">Quality</span>
+        </div>
+      </div>
     </aside>
+
     <div class="videos-content">
+      <div class="content-header">
+        <h2 class="section-title">Video Portfolio</h2>
+        <p class="content-subtitle">All videos autoplay on mute - hover to see controls</p>
+      </div>
+
       <div class="videos-grid">
-        <div class="video-card" *ngFor="let video of videos">
-          <video
-  [src]="video.src"
-  loop
-  autoplay
-  muted
-  playsinline
-  preload="metadata"
-  class="video-player"
-  (loadeddata)="ensureVideoMuted($event)"
-></video>
+        <article 
+          class="video-card" 
+          *ngFor="let video of videos; trackBy: trackByVideo"
+        >
+          <div class="video-wrapper">
+            <video
+              [src]="video.src"
+              loop
+              autoplay
+              muted
+              playsinline
+              preload="metadata"
+              class="video-player"
+              [attr.aria-label]="video.title"
+              (loadeddata)="ensureVideoMuted($event)"
+            ></video>
+            <div class="video-overlay">
+              <span class="play-icon">▶</span>
+            </div>
+          </div>
           <div class="video-info">
             <h3>{{ video.title }}</h3>
             <p>{{ video.description }}</p>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Image Modal -->
+<div 
+  class="image-modal" 
+  [class.active]="isImageModalOpen"
+  (click)="closeImageModal()"
+  (keydown)="handleKeyboardClose($event)"
+  *ngIf="isImageModalOpen"
+  role="dialog"
+  aria-modal="true"
+  [attr.aria-label]="selectedImage?.title"
+>
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button 
+      class="modal-close" 
+      (click)="closeImageModal()"
+      aria-label="Close modal"
+      type="button"
+    >
+      ✕
+    </button>
+    <img 
+      *ngIf="selectedImage"
+      [src]="selectedImage.image" 
+      [alt]="selectedImage.title"
+      class="modal-image"
+    />
+    <div class="modal-info" *ngIf="selectedImage">
+      <h3>{{ selectedImage.title }}</h3>
+      <p>{{ selectedImage.description }}</p>
+      <span class="modal-category" *ngIf="selectedImage.category">
+        {{ selectedImage.category }}
+      </span>
+    </div>
+  </div>
+</div>
