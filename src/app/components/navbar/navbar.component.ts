@@ -49,9 +49,11 @@ export class NavbarComponent implements OnDestroy {
     if (!this.isBrowser) return;
 
     if (this.isMenuOpen) {
+      document.body.classList.add('menu-open');
       document.body.style.overflow = 'hidden';
       document.body.style.paddingRight = this.getScrollbarWidth() + 'px';
     } else {
+      document.body.classList.remove('menu-open');
       document.body.style.overflow = '';
       document.body.style.paddingRight = '';
     }
