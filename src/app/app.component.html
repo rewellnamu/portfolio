@@ -1,9 +1,20 @@
-<div *ngIf="isLoading" class="preloader">
-  <app-preloader></app-preloader>
+<!-- Preloader -->
+<div class="preloader" *ngIf="loading" [class.fade-out]="!loading">
+  <div class="spinner-container">
+    <div class="spinner"></div>
+    <div class="loading-text">Loading...</div>
+  </div>
 </div>
 
-<div [class.hidden]="isLoading" class="main-content">
-  <app-navbar></app-navbar>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
+<!-- Main Application Content -->
+<div class="main-content" [class.hidden]="loading">
+  <div class="app-container">
+    <!-- Navigation -->
+    <app-navbar></app-navbar>
+    
+    <!-- Content Area -->
+    <div class="content-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
