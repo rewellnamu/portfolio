@@ -20,7 +20,6 @@
     padding: 0.625rem 1rem;
   }
 
-  // Enhanced scroll effect
   &.scrolled {
     padding: 0.5rem 2rem;
     box-shadow: 0 4px 24px rgba(30, 64, 175, 0.12);
@@ -133,7 +132,6 @@
     }
   }
 
-  // Desktop Navigation
   .nav-links {
     list-style: none;
     display: flex;
@@ -147,7 +145,7 @@
       top: 0;
       right: -120%;
       height: 100vh;
-      height: 100dvh; // Dynamic viewport height for mobile
+      height: 100dvh;
       width: 85vw;
       max-width: 400px;
       flex-direction: column;
@@ -233,7 +231,6 @@
           font-weight: 600;
         }
 
-        // Ripple effect
         &::before {
           content: '';
           position: absolute;
@@ -247,7 +244,6 @@
           transition: width 0.6s, height 0.6s;
         }
 
-        // Underline effect for desktop
         &::after {
           content: '';
           position: absolute;
@@ -329,7 +325,6 @@
     }
   }
 
-  // Active state for menu items animation
   .nav-links.active li {
     @media (max-width: 968px) {
       opacity: 1;
@@ -337,90 +332,121 @@
     }
   }
 
-  // Hamburger Menu Button
+  // Modern Dot Menu Button (Elastic Animation)
   .menu-toggle {
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 32px;
-    height: 26px;
-    background: transparent;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background: #fff;
     border: none;
+    border-radius: 50%;
     cursor: pointer;
     padding: 0;
     z-index: 1002;
-    position: relative;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     -webkit-tap-highlight-color: transparent;
+    box-shadow: 
+      0 4px 12px rgba(37, 99, 235, 0.15),
+      0 0 0 0 rgba(37, 99, 235, 0.2);
 
     @media (max-width: 968px) {
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    &:focus {
-      outline: 2px solid var(--accent);
-      outline-offset: 4px;
-      border-radius: 4px;
+    @media (max-width: 480px) {
+      width: 44px;
+      height: 44px;
     }
 
-    span {
-      width: 100%;
-      height: 3.5px;
-      background: var(--accent, #2563eb);
-      border-radius: 4px;
-      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-      transform-origin: center;
+    &:hover {
+      box-shadow: 
+        0 6px 20px rgba(37, 99, 235, 0.25),
+        0 0 0 8px rgba(37, 99, 235, 0.08);
+      transform: scale(1.08);
 
-      &:nth-child(1) {
-        width: 100%;
-      }
-
-      &:nth-child(2) {
-        width: 80%;
-        align-self: flex-end;
-      }
-
-      &:nth-child(3) {
-        width: 100%;
-      }
-    }
-
-    &.active {
-      span {
-        &:nth-child(1) {
-          transform: translateY(11px) rotate(45deg);
-          width: 100%;
-        }
-
-        &:nth-child(2) {
-          opacity: 0;
-          transform: translateX(30px) scale(0);
-        }
-
-        &:nth-child(3) {
-          transform: translateY(-11px) rotate(-45deg);
-          width: 100%;
-        }
-      }
-    }
-
-    &:hover:not(.active) {
       span {
         background: #1d4ed8;
-        
-        &:nth-child(2) {
-          width: 100%;
-        }
+        transform: scale(1.15);
       }
     }
 
     &:active {
+      transform: scale(0.92);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 
+        0 6px 20px rgba(37, 99, 235, 0.25),
+        0 0 0 3px rgba(37, 99, 235, 0.3);
+    }
+
+    span {
+      display: block;
+      width: 5px;
+      height: 5px;
+      background: var(--accent, #2563eb);
+      border-radius: 50%;
+      transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      position: absolute;
+
+      &:nth-child(1) {
+        top: 50%;
+        left: 8px;
+        transform: translateY(-50%);
+      }
+
+      &:nth-child(2) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:nth-child(3) {
+        top: 50%;
+        right: 8px;
+        transform: translateY(-50%);
+      }
+    }
+
+    // Active state (Transform to X)
+    &.active {
+      background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      box-shadow: 
+        0 8px 32px rgba(37, 99, 235, 0.4),
+        0 0 0 0 rgba(37, 99, 235, 0);
+      transform: rotate(90deg);
+
       span {
-        background: #1e40af;
+        background: #fff;
+        width: 20px;
+        height: 2.5px;
+        border-radius: 2px;
+
+        &:nth-child(1) {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+          transform: translate(-50%, -50%) scale(0);
+        }
+
+        &:nth-child(3) {
+          top: 50%;
+          right: auto;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+        }
       }
     }
   }
 
-  // Desktop Actions Container
   .nav-actions {
     display: flex;
     align-items: center;
@@ -433,7 +459,6 @@
     }
   }
 
-  // Menu Overlay
   .menu-overlay {
     display: none;
 
@@ -452,7 +477,7 @@
       backdrop-filter: blur(0px);
 
       &.active {
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.6);
         backdrop-filter: blur(4px);
         pointer-events: all;
       }
@@ -520,16 +545,24 @@ body.dark-theme .navbar {
   }
 
   .menu-toggle {
+    background: linear-gradient(135deg, rgba(31, 41, 55, 0.9) 0%, rgba(55, 65, 81, 0.9) 100%);
+    border-color: rgba(96, 165, 250, 0.3);
+
+    &:hover {
+      background: linear-gradient(135deg, rgba(55, 65, 81, 0.9) 0%, rgba(75, 85, 99, 0.9) 100%);
+      border-color: rgba(96, 165, 250, 0.5);
+    }
+
     span {
       background: #60a5fa;
     }
 
-    &:hover:not(.active) span {
-      background: #93c5fd;
-    }
-
-    &:active span {
-      background: #3b82f6;
+    &.active {
+      background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+      
+      span {
+        background: #fff;
+      }
     }
   }
 }
@@ -539,7 +572,7 @@ html {
   scroll-behavior: smooth;
 }
 
-// Prevent horizontal overflow and ensure mobile menu works
+// Prevent horizontal overflow
 body {
   overflow-x: hidden;
   position: relative;
